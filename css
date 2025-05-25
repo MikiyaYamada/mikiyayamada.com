@@ -1,0 +1,137 @@
+ <!-- スタイル -->
+  <style>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      text-align: center; /* テキスト要素を中央揃えに */
+      margin: 0;
+      padding: 0;
+      background: #f7f7f7;
+    }
+    header {
+      background: #111;
+      color: #fff;
+      padding: 1rem;
+      position: relative;
+      margin: 0 auto;
+      max-width: 900px; /* お好みで調整 */
+    }
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  height: 40px; /* お好みで調整 */
+  width: auto;
+}
+
+.header-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo {
+    height: 30px;
+  }
+
+  .header-title {
+    font-size: 1.2rem;
+  }
+}
+    .menu-icon {
+      font-size: 1.5rem;
+      cursor: pointer;
+      display: none;
+    }
+    nav {
+      display: flex;
+      gap: 1rem;
+      margin: 0 auto;
+      max-width: 900px; /* お好みで調整 */
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+    }
+    .hidden {
+      display: none;
+    }
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        margin-top: 1rem;
+      }
+      .menu-icon {
+        display: block;
+      }
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    nav li a {
+      text-decoration: none;
+}
+
+    .gallery-grid {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* 子要素を中央寄せに */
+      gap: 40px; /* 画像の間の余白 */
+      padding: 20px;
+    }
+
+    .gallery-grid a {
+      display: block;
+      display: block;
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      padding: 20px; /* 内側の余白 */
+    }
+
+    .gallery-grid img {
+      display: block;
+      max-width: 100%;
+      width: 50%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* 影で浮かせる効果も追加可能 */
+    }
+
+    .gallery-grid img:hover {
+      transform: scale(1.03);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #111;
+      color: #fff;
+      margin-top: 3rem;
+      margin: 0 auto;
+      max-width: 900px; /* お好みで調整 */
+    }
+.fade {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
