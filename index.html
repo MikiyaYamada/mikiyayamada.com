@@ -20,21 +20,22 @@
   <header>
     <div class="header-container">
       <img src="images/logo.png" alt="Mikiya Yamada Logo" class="logo">
-      <div class="header-title">Mikiya Yamada Photography</div>
-      <div class="menu-toggle" id="menu-toggle">$#9776;</div>
+      <h1 class="header-title">Mikiya Yamada Photography</h1>
+      <span class="menu-toggle" id="menu-toggle">$#9776;</span>
+    </div>
       <nav id="nav-menu">
         <ul>
-          <li> <a href="index.html">Home</a> <li>
+          <li> <a href="../index.html">Home</a> <li>
           <li class="dropdown">
-            <a href="#" onclick="toggleDropdown(event)">gallery</a>
-            <ul class="dropdown-content" id="gallery-dropdown">
-              <li><a href="galleries/landscape.html">landscape</a><li>
-              <li><a href="galleries/woodland.html">woodland</a><li>
-              <li><a href="galleries/waterfall.html">waterfall</a><li>
+            <a href="#">Gallery</a>
+            <ul class="dropdown-content">
+              <li><a href="galleries/landscape.html">Landscape</a><li>
+              <li><a href="galleries/woodland.html">Woodland</a><li>
+              <li><a href="galleries/waterfall.html">Waterfall</a><li>
       　　  </ul>
          </li>
-         <li><a href="#about">about</a><li>
-         <li><a href="#contact">contact</a><li>
+         <li><a href="#about.html">About</a><li>
+         <li><a href="#contact.html">Contact</a><li>
        </ul>
      </nav>
   </header>
@@ -96,6 +97,8 @@
     const dropdown = document.getElementById("gallery-dropdown");
     dropdown.classList.toggle("show");
   }
+ </script>
+ <script>
    document.addEventListener('DOMContentLoaded', function () {
     const menuToggle = document.getElementById('menu-toggle');
     const navMenu = document.getElementById('nav-menu');
@@ -105,6 +108,5 @@
     });
   });
 </script>
-
 </body>
 </html>
