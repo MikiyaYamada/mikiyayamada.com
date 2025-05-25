@@ -12,12 +12,13 @@
       position: relative;
       margin: 0 auto;
       max-width: 900px; /* お好みで調整 */
+      display: flex;
+      justify-content: center;   /* 中央揃え */
+      align-items: center;
+      flex-direction: row;    /* 上下に積むなら column、横なら row */
+      text-align: center;
+      padding: 1rem;
     }
-.header-container {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
 
 .logo {
   height: 40px; /* お好みで調整 */
