@@ -201,9 +201,9 @@ nav {
 
 @media (max-width: 768px) {
 　 .menu-toggle {
-     display:block;
+     display: block;
   }
-    
+}  
   #nav-menu {
     display: none;
     flex-direction: column;
