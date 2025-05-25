@@ -108,5 +108,27 @@
     <p>&copy; 2025 Mikiya Yamada Photography</p>
   </footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+<script>
+  // オプション（交差判定のしきい値）
+  const options = {
+    threshold: 0.1
+  };
+
+  // コールバック関数：対象が見えたら visible クラスを追加、見えなくなったら削除
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      } else {
+        entry.target.classList.remove('visible');
+      }
+    });
+  }, options);
+
+  // .fade クラスがついたすべての要素を監視対象にする
+  document.querySelectorAll('.fade').forEach(el => {
+    observer.observe(el);
+  });
+</script>
 </body>
 </html>
