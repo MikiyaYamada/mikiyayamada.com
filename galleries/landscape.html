@@ -8,14 +8,22 @@
 </head>
 <body>
   <header>
-    <h1>Landscape</h1>
-    <nav>
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="galleries/landscape.html">Landscape</a></li>
-        <li><a href="galleries/woodland.html">Woodland</a></li>
-        <li><a href="galleries/waterfall.html">Waterfall</a></li>
-      </ul>
+     <div class="header-container">
+      <div class="header-title">Landscape</div>
+    </div>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <nav id="nav-menu">
+      <a href="index.html">Home</a>
+      <div class="dropdown">
+        <a href="#" onclick="toggleDropdown(event)">gallery</a>
+        <div class="dropdown-content" id="gallery-dropdown">
+          <a href="galleries/landscape.html">landscape</a>
+          <a href="galleries/woodland.html">woodland</a>
+          <a href="galleries/waterfall.html">waterfall</a>
+        </div>
+      </div>
+      <a href="#about">about</a>
+      <a href="#contact">contact</a>
     </nav>
   </header>
 
