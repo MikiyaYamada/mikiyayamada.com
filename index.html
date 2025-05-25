@@ -25,6 +25,38 @@
       padding: 1rem;
       position: relative;
     }
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  height: 40px; /* お好みで調整 */
+  width: auto;
+}
+
+.header-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo {
+    height: 30px;
+  }
+
+  .header-title {
+    font-size: 1.2rem;
+  }
+}
     .menu-icon {
       font-size: 1.5rem;
       cursor: pointer;
@@ -161,7 +193,10 @@ nav {
 
   <!-- ヘッダー -->
   <header>
-    <div class="header-title">Mikiya Yamada Photography</div>
+    <div class="header-container">
+      <img src="images/logo.png" alt="Mikiya Yamada Logo" class="logo">
+      <div class="header-title">Mikiya Yamada Photography</div>
+    </div>
     <div class="menu-icon" onclick="toggleMenu()">☰</div>
     <nav id="nav-menu">
       <a href="index.html">Home</a>
