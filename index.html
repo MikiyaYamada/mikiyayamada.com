@@ -247,6 +247,27 @@ nav {
     AOS.init();
   </script>
 
+  <!-- Intersection Observer -->
+  <script>
+  const options = {
+    threshold: 0.1
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      } else {
+        entry.target.classList.remove('visible');
+      }
+    });
+  }, options);
+
+  document.querySelectorAll('.fade').forEach(el => {
+    observer.observe(el);
+  });
+</script>
+
   <!-- ハンバーガーメニュー用 -->
  <script>
   function toggleMenu() {
