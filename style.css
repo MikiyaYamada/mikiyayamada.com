@@ -212,9 +212,7 @@ nav {
   #nav-menu a {
     padding: 0.75rem 0;
   }
-  .menu-icon {
-    display: block;
-  }
+
   .dropdown-content {
     position: static;
     background-color: #222;
