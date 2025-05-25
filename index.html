@@ -91,7 +91,7 @@
  <script>
   function toggleMenu() {
     const nav = document.getElementById("nav-menu");
-    nav.style.display = nav.style.display === "flex" ? "none" : "flex";
+    nav.classList.toggle('active');
   }
 
   function toggleDropdown(e) {
