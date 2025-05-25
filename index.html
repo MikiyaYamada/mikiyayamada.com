@@ -114,6 +114,82 @@
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+/* 基本ナビゲーション */
+nav {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  position: relative;
+}
+
+/* プルダウンの親 */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #333;
+  min-width: 160px;
+  border-radius: 4px;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.dropdown-content a {
+  display: block;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.dropdown-content a:hover {
+  background-color: #444;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* モバイル用 */
+.menu-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+#nav-menu {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  #nav-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #111;
+    padding: 1rem;
+  }
+  #nav-menu a {
+    padding: 0.5rem 0;
+  }
+  .menu-icon {
+    display: block;
+  }
+  .dropdown-content {
+    position: static;
+  }
+  .dropdown:hover .dropdown-content {
+    display: none;
+  }
+  .dropdown .dropdown-content.show {
+    display: block;
+  }
+}
   </style>
 </head>
 
@@ -125,8 +201,8 @@
     <nav id="nav-menu">
       <a href="index.html">Home</a>
       <div class="dropdown">
-        <a href="#">ギャラリー</a>
-        <div class="dropdown-content">
+        <a href="#" onclick="toggleDropdown(event)>gallery</a>
+        <div class="dropdown-content" id="gallery-dropdown">
           <a href="galleries/landscape.html">landscape</a>
           <a href="galleries/woodland.html">woodland</a>
           <a href="galleries/waterfall.html">waterfall</a>
@@ -162,11 +238,18 @@
   </script>
 
   <!-- ハンバーガーメニュー用 -->
-  <script>
-    function toggleMenu() {
-      document.getElementById("nav-menu").classList.toggle("hidden");
-    }
-  </script>
+ <script>
+  function toggleMenu() {
+    const nav = document.getElementById("nav-menu");
+    nav.style.display = nav.style.display === "flex" ? "none" : "flex";
+  }
+
+  function toggleDropdown(e) {
+    e.preventDefault();
+    const dropdown = document.getElementById("gallery-dropdown");
+    dropdown.classList.toggle("show");
+  }
+</script>
 
 </body>
 </html>
