@@ -63,11 +63,6 @@
     font-size: 1.2rem;
   }
 }
-    .menu-icon {
-      font-size: 1.5rem;
-      cursor: pointer;
-      display: none;
-    }
     nav {
       display: flex;
       gap: 1rem;
@@ -85,12 +80,6 @@
       nav {
         flex-direction: column;
         margin-top: 1rem;
-      }
-      .menu-icon {
-        display: none;
-        font-size: 1.8rem;
-        cursor: pointer;
-        color: white;
       }
     }
     nav ul {
@@ -211,8 +200,8 @@ nav {
 }
 
 @media (max-width: 768px) {
-　 .menu-toggle{
-      display:block;
+　 .menu-toggle {
+     display:block;
   }
     
   #nav-menu {
