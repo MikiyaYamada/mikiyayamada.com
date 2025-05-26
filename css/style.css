@@ -22,17 +22,14 @@ header {
 .menu-toggle {
   width: 30px;
   height: 24px;
-  display: flex;
+  display: none;
   flex-direction: colum;
-  font-size: 2rem;
   justify-content: space-between;
   cursor: pointer;
   z-index: 1000;
   position: absolute;
   left: 1rem;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 2rem;
+  top: 1rem;
   color: white;
 }
  menu-toggle span {
