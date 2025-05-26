@@ -150,3 +150,24 @@ nav li a {
     display: block;
   }
 }
+/* PCサイズではメニューを常に横並びで表示 */
+@media (min-width: 769px) {
+  #nav-menu {
+    display: flex !important;
+    justify-content: center;
+    gap: 2rem;
+    background-color: transparent;
+    position: static;
+    transform: none;
+    height: auto;
+    padding-top: 0;
+  }
+
+  #overlay {
+    display: none !important;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+}
