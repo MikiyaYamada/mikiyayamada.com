@@ -171,6 +171,38 @@ nav li a {
     display: block;
   }
 }
+@media (max-width: 768px) {
+  .dropdown-content {
+    display: none;
+    flex-direction: column;
+    background-color: #222;
+    padding-left: 1rem;
+  }
+
+  .dropdown-content.show {
+    display: flex;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: none; /* モバイルでは hover 無効 */
+  }
+}
+@media (max-width: 768px) {
+  .header-container {
+    justify-content: center;
+    position: relative;
+  }
+
+  .menu-toggle {
+    position: absolute;
+    left: 1rem;
+  }
+
+  .logo {
+    margin: 0 auto;
+  }
+}
+
 /* PCサイズではメニューを常に横並びで表示 */
 @media (min-width: 769px) {
   #nav-menu {
@@ -225,5 +257,34 @@ nav li a {
 
   #nav-menu li a:hover {
     border-bottom: 2px solid white;
+  }
+}
+@media (min-width: 769px) {
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #222;
+    min-width: 160px;
+    padding: 0.5rem 0;
+    z-index: 1002;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  /* PCではJSの .show クラス無効 */
+  .dropdown-content.show {
+    display: none;
+  }
+
+  .dropdown:hover .dropdown-content.show {
+    display: block;
+  }
+
+  .dropdown {
+    position: relative;
   }
 }
