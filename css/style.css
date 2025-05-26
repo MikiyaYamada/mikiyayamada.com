@@ -158,31 +158,28 @@ nav li a {
     margin: 0 auto;
   }
   #overlay {
-  z-index: 1000; /* nav-menu より下に */
+    z-index: 1000; /* nav-menu より下に */
   }
   .dropdown {
-  display: flex;
-  align-items: center;
-  gap: 0.3rem;
-  position: relative;
-}
-
-.dropdown-toggle {
-  cursor: pointer;
-  color: white;
-  font-size: 0.9rem;
-  user-select: none;
-}
-
-@media (min-width: 769px) {
-  .dropdown-toggle {
-    display: none; /* PCでは不要 */
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    position: relative;
   }
-}
+
+  .dropdown-toggle {
+    cursor: pointer;
+    color: white;
+    font-size: 0.9rem;
+    user-select: none;
+  }
 }
 
 /* PC */
 @media (min-width: 769px) {
+  .dropdown-toggle {
+    display: none; /* PCでは不要 */
+  }
   .header-container {
     justify-content: center;
     gap: 2rem;
