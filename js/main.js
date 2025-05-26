@@ -30,5 +30,18 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }, { threshold: 0.1 });
 
+  // Galleriesのドロップダウン（モバイルのみ）
+  const galleryToggle = document.getElementById("galleries-toggle");
+  if (galleryToggle) {
+    galleryToggle.addEventListener("click", function (e) {
+      if (window.innerWidth < 769) {
+        e.preventDefault();
+        const dropdown = document.getElementById("gallery-dropdown");
+        dropdown.classList.toggle("show");
+      }
+    });
+  }
+});
+
   document.querySelectorAll('.fade').forEach(el => observer.observe(el));
 });
