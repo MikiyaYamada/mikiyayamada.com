@@ -9,29 +9,29 @@
 <body>
   <header>
     <div class="header-container">
+      <img src="images/logo.png" alt="Mikiya Yamada Logo" class="logo">
       <div class="menu-toggle" onclick="toggleMenu(this)">
         <span></span>
         <span></span>
         <span></span>
       </div>
-      <img src="images/logo.png" alt="Mikiya Yamada Logo" class="logo">
+      <nav id="nav-menu">
+        <ul>
+          <li><a href="index.html"　onclick="closeMenu()">Home</a></li>
+          <li class="dropdown">
+            <span class="dropdown-label">Galleries</span>
+            <span class="dropdown-toggle" onclick="toggleDropdown(event)">v</span>
+            <ul class="dropdown-content" id="gallery-dropdown">
+              <li><a href="galleries/landscape.html" onclick="closeMenu()">Landscape</a></li>
+              <li><a href="galleries/woodland.html" onclick="closeMenu()">Woodland</a></li>
+              <li><a href="galleries/waterfall.html" onclick="closeMenu()">Waterfall</a></li>
+            </ul>
+          </li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav id="nav-menu">
-      <ul>
-        <li><a href="index.html"　onclick="closeMenu()">Home</a></li>
-        <li class="dropdown">
-          <span class="dropdown-label">Galleries</span>
-          <span class="dropdown-toggle" onclick="toggleDropdown(event)">v</span>
-          <ul class="dropdown-content" id="gallery-dropdown">
-            <li><a href="galleries/landscape.html" onclick="closeMenu()">Landscape</a></li>
-            <li><a href="galleries/woodland.html" onclick="closeMenu()">Woodland</a></li>
-            <li><a href="galleries/waterfall.html" onclick="closeMenu()">Waterfall</a></li>
-          </ul>
-        </li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
     <div id="overlay" onclick="closeMenu()"></div>
   </header>
    
