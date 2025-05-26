@@ -1,58 +1,17 @@
 body {
-  font-family: 'Helvetica Neue', sans-serif;
-  background: #f7f7f7;
   margin: 0;
-  padding: 0;
+  font-family: sans-serif;
+  background-color: #f7f7f7;
   text-align: center;
 }
-header {
-  background: #111;
-  color: #fff;
-  padding: 1rem;
-}
 .header-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: relative;
-  height: 80px; /* 固定高さで安定させる */ 
-  padding: 1rem 0;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #111;
 }
-/* ハンバーガーを左上に配置 */
-.menu-toggle {
-  width: 30px;
-  height: 24px;
-  display: none;
-  flex-direction: colum;
-  justify-content: space-between;
-  cursor: pointer;
-  z-index: 1000;
-  position: absolute;
-  left: 1rem;
-  top: 1rem;
-  color: white;
-}
- menu-toggle span {
-  display: block;
-  height: 3px;
-  width: 100%;
-  background: white;
-  border-radius: 2px;
-  transition: all 0.3s ease;
- }
-/* アクティブ時（Xに変化） */
-.menu-toggle.active span:nth-child(1) {
-  transform: rotate(45deg) translateY(8px);
-}
-
-.menu-toggle.active span:nth-child(2) {
-  opacity: 0;
-}
-
-.menu-toggle.active span:nth-child(3) {
-  transform: rotate(-45deg) translateY(-8px);
-}
-/* ロゴを中央に配置　*/
 .logo {
   height: 50px;
   width: auto;
@@ -60,18 +19,49 @@ header {
   left: 50%;
   transform: translateX(-50%);
 }
+.menu-toggle {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  display: none;
+  width: 30px;
+  height: 24px;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 1000;
+}
+.menu-toggle span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: white;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+.menu-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translateY(8px);
+}
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+.menu-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-8px);
+}
+nav {
+  background: #111;
+}
 nav ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
   justify-content: center;
-  gap: 1rem;
-  padding: 0;
+  gap: 1.5rem;
 }
-nav ul li {
-  position: relative;
-}
-nav a {
-  color: #fff;
+nav li a {
+  color: white;
   text-decoration: none;
 }
 .dropdown-content {
@@ -83,22 +73,16 @@ nav a {
   display: flex;
 }
 .gallery-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
   padding: 2rem;
 }
 .gallery-grid img {
   width: 300px;
-  height: auto;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 .fade {
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
+  transition: all 0.6s ease;
 }
 .fade.visible {
   opacity: 1;
@@ -106,11 +90,12 @@ nav a {
 }
 @media (max-width: 768px) {
   .menu-toggle {
-    display: block;
+    display: flex;
   }
   #nav-menu {
     display: none;
     flex-direction: column;
+    background-color: #111;
   }
   #nav-menu.active {
     display: flex;
