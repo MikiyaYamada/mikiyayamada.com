@@ -12,9 +12,10 @@ header {
 }
 .header-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   position: relative;
+  height: 80px; /* 固定高さで安定させる */ 
   padding: 1rem 0;
 }
 /* ハンバーガーを左上に配置 */
@@ -29,9 +30,13 @@ header {
   font-size: 2rem;
   color: white;
 }
+/* ロゴを中央に配置　*/
 .logo {
-  height: 60px;
+  height: 50px;
   width: auto;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 nav ul {
   list-style: none;
