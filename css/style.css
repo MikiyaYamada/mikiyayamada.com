@@ -93,11 +93,34 @@ nav li a {
     display: flex;
   }
   #nav-menu {
-    display: none;
-    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
     background-color: #111;
+    flex-direction: column;
+    padding-top: 80px;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 1001;
   }
-  #nav-menu.active {
-    display: flex;
+    #nav-menu.active {
+    transform: translateX(0);
+  }
+
+  #overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    display: none;
+    z-index: 1000;
+  }
+
+  #overlay.show {
+    display: block;
   }
 }
