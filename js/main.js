@@ -19,14 +19,6 @@ function toggleDropdown(e) {
   dropdown.classList.toggle("show");
     // ▼↔▲ トグル（オプション）
   const toggleIcon = e.currentTarget;
-  const isShown = dropdown.classlist.contains("show");
-    if (isShown) {
-    dropdown.classList.remove("show");
-    toggleIcon.textContent = "▼";
-  } else {
-    dropdown.classList.add("show");
-    toggleIcon.textContent = "▲";
-    }
   toggleIcon.textContent = dropdown.classList.contains("show") ? "▲" : "▼";
  }
 }
