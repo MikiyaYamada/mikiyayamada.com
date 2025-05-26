@@ -14,16 +14,24 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  padding: 1rem 0;
 }
+/* ハンバーガーを左上に配置 */
 .menu-toggle {
   display: none;
   font-size: 2rem;
   cursor: pointer;
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: white;
 }
 .logo {
-  height: 10px;
+  height: 60px;
   width: auto;
-  margin-right: 1rem;
 }
 nav ul {
   list-style: none;
