@@ -49,20 +49,19 @@ body {
 .menu-toggle.active span:nth-child(3) {
   transform: rotate(-45deg) translateY(-8px);
 }
-nav {
-  background: #111;
-}
 nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
-  justify-content: center;
-  gap: 1.5rem;
+  flex-directoin: column;
+  gap: 1rem;
 }
 nav li a {
   color: white;
   text-decoration: none;
+  padding: 1rem;
+  display: block;
 }
 .dropdown-content {
   display: none;
@@ -88,6 +87,8 @@ nav li a {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* スライドメニューとオーバーレイ（モバイル） */
 @media (max-width: 768px) {
   .menu-toggle {
     display: flex;
