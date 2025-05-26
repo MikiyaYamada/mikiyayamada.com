@@ -201,10 +201,6 @@ nav li a {
   .dropdown-content.show {
     display: none !important;
   }
-
-  .dropdown:hover .dropdown-content.show {
-    display: block !important;
-  }
 }
 
 /* モバイル対応 */
