@@ -15,10 +15,19 @@ function closeMenu() {
 function toggleDropdown(e) {
   e.preventDefault();
   e.stopPropagation(); // 他の要素への伝播を防ぐ
+  if (window.innerWidth >= 769) return;
   const dropdown = document.getElementById("gallery-dropdown");
   dropdown.classList.toggle("show");
     // ▼↔▲ トグル（オプション）
-  const toggleIcon = e.target;
+  const toggleIcon = e.currentTarget;
+  const isShown = dropdown.classlist.contains("show");
+    if (isShown) {
+    dropdown.classList.remove("show");
+    toggleIcon.textContent = "▼";
+  } else {
+    dropdown.classList.add("show");
+    toggleIcon.textContent = "▲";
+    }
   toggleIcon.textContent = dropdown.classList.contains("show") ? "▲" : "▼";
 }
 
