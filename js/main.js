@@ -14,11 +14,12 @@ function closeMenu() {
 
 function toggleDropdown(e) {
   e.preventDefault();
-  if (window.innerWidth >= 769) return;
+  if (window.innerWidth >= 769) return; // PCではJS無効
   const dropdown = document.getElementById("gallery-dropdown");
   dropdown.classList.toggle("show");
 }
 
+// スクロールフェード
 document.addEventListener("DOMContentLoaded", () => {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -33,6 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll('.fade').forEach(el => observer.observe(el));
 });
 
+// PCリサイズ時にドロップダウン強制クローズ
 window.addEventListener("resize", () => {
   if (window.innerWidth >= 769) {
     document.getElementById("gallery-dropdown").classList.remove("show");
