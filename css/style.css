@@ -241,9 +241,6 @@ nav li a {
   }
   
   .dropdown {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     width: 100%;
   }
   
@@ -254,22 +251,24 @@ nav li a {
     width: 100%;
     padding: 1rem;
     color: white;
-    cursor: default;
+    text-sizing: border-box;
  }
+  
+  .dropdown-label {
+    flex: 1; /* 左側に寄せる */
+  }
   
   .dropdown-content {
     display: none;
     flex-direction: colum;
-    position: static;
     background-color: #222;
     padding-left: 1rem;
     width: 100%;
+    box-sizing: border-box;
   }
 
   .dropdown-content.show {
     display: flex;
-    position: static;
-    background-color: #222;
   }
 
   .dropdown:hover .dropdown-content {
@@ -277,10 +276,8 @@ nav li a {
   }
 
   .dropdown-toggle {
-    display: inline;
     cursor: pointer;
-    color: white;
-    padding: 0.75rem 1rem;
+    padding-left: 1rem;
     user-select: none;
   }
 
