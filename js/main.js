@@ -17,6 +17,9 @@ function toggleDropdown(e) {
   if (window.innerWidth >= 769) return; // PCではJS無効
   const dropdown = document.getElementById("gallery-dropdown");
   dropdown.classList.toggle("show");
+    // ▼↔▲ トグル（オプション）
+  const toggleIcon = e.target;
+  toggleIcon.textContent = dropdown.classList.contains("show") ? "▲" : "▼";
 }
 
 // スクロールフェード
