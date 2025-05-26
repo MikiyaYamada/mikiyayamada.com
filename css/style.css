@@ -288,3 +288,49 @@ nav li a {
     position: relative;
   }
 }
+/* モバイル用：JSでトグル */
+@media (max-width: 768px) {
+  .dropdown-content {
+    display: none;
+    flex-direction: column;
+    background-color: #222;
+    padding-left: 1rem;
+  }
+
+  .dropdown-content.show {
+    display: flex;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: none; /* モバイルでは hover 無効 */
+  }
+}
+/* PC用：hoverのみ有効。JSで付与されても無視 */
+@media (min-width: 769px) {
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #222;
+    min-width: 160px;
+    padding: 0.5rem 0;
+    z-index: 1002;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown-content.show {
+    display: none !important; /* JSのshowを上書き無効化 */
+  }
+
+  .dropdown:hover .dropdown-content.show {
+    display: block !important;
+  }
+
+  .dropdown {
+    position: relative;
+  }
+}
