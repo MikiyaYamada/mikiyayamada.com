@@ -160,6 +160,7 @@
   opacity: 1;
   transform: translateY(0);
 }
+
 /* 基本ナビゲーション */
 nav {
   display: flex;
