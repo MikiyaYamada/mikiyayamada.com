@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }, { threshold: 0.1 });
-
+  document.getElementById("gallery-dropdown")?.classList.remove("show");
   document.querySelectorAll('.fade').forEach(el => observer.observe(el));
 });
 
