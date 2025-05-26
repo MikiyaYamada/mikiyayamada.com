@@ -14,7 +14,7 @@ function closeMenu() {
 
 function toggleDropdown(e) {
   e.preventDefault();
-  if (window.innerWidth >= 769) return; // PCではJS無効
+  e.stopPropagation(); // 他の要素への伝播を防ぐ
   const dropdown = document.getElementById("gallery-dropdown");
   dropdown.classList.toggle("show");
     // ▼↔▲ トグル（オプション）
