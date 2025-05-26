@@ -32,3 +32,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.querySelectorAll('.fade').forEach(el => observer.observe(el));
 });
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth >= 769) {
+    document.getElementById("gallery-dropdown").classList.remove("show");
+  }
+});
