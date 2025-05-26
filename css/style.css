@@ -20,15 +20,40 @@ header {
 }
 /* ハンバーガーを左上に配置 */
 .menu-toggle {
-  display: none;
+  width: 30px;
+  height: 3px;
+  display: flex;
+  flex-direction: colum;
   font-size: 2rem;
+  justify-content: space-between;
   cursor: pointer;
+  z-index: 1000;
   position: absolute;
   left: 1rem;
   top: 50%;
   transform: translateY(-50%);
   font-size: 2rem;
   color: white;
+}
+ menu-toggle span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: white;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+ }
+/* アクティブ時（Xに変化） */
+.menu-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
 }
 /* ロゴを中央に配置　*/
 .logo {
