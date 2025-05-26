@@ -1,0 +1,75 @@
+/* 簡略化したベースのCSS（必要であればフル版に差し替え可能） */
+body {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  background: #f7f7f7;
+  text-align: center;
+}
+.header-container {
+  background: #111;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+.logo {
+  height: 48px;
+}
+.menu-toggle {
+  display: none;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+}
+nav li a {
+  color: white;
+  text-decoration: none;
+}
+.dropdown {
+  position: relative;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  background: #222;
+}
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+  #nav-menu {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    background: #111;
+    width: 250px;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transform: translateX(-100%);
+    transition: 0.3s ease;
+  }
+  #nav-menu.active {
+    transform: translateX(0);
+  }
+  .dropdown-content {
+    display: none;
+    flex-direction: column;
+  }
+  .dropdown-content.show {
+    display: flex;
+  }
+}
+@media (min-width: 769px) {
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown-content.show {
+    display: none !important;
+  }
+}
