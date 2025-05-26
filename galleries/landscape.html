@@ -1,31 +1,38 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <title>Landscape - Gallery</title>
-  <link rel="stylesheet" href="../style.css">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landscape</title>
+  <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
-  <header>
-     <div class="header-container">
-      <div class="header-title">Landscape</div>
+  <header class="header-container">
+    <div class="menu-toggle" onclick="toggleMenu(this)">
+      <span></span><span></span><span></span>
     </div>
-    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <img src="../images/logo.png" alt="Logo" class="logo" />
     <nav id="nav-menu">
-      <a href="index.html">Home</a>
-      <div class="dropdown">
-        <a href="#" onclick="toggleDropdown(event)">gallery</a>
-        <div class="dropdown-content" id="gallery-dropdown">
-          <a href="galleries/landscape.html">landscape</a>
-          <a href="galleries/woodland.html">woodland</a>
-          <a href="galleries/waterfall.html">waterfall</a>
-        </div>
-      </div>
-      <a href="#about">about</a>
-      <a href="#contact">contact</a>
+      <ul>
+        <li><a href="../index.html" onclick="closeMenu()">Home</a></li>
+        <li class="dropdown">
+          <div class="dropdown-header">
+            <span class="dropdown-label">Galleries</span>
+            <span class="dropdown-toggle" onclick="toggleDropdown(event)">▼</span>
+          </div>
+          <ul class="dropdown-content" id="gallery-dropdown">
+            <li><a href="landscape.html" onclick="closeMenu()">Landscape</a></li>
+            <li><a href="woodland.html" onclick="closeMenu()">Woodland</a></li>
+            <li><a href="waterfall.html" onclick="closeMenu()">Waterfall</a></li>
+          </ul>
+        </li>
+        <li><a href="#about" onclick="closeMenu()">About</a></li>
+        <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+      </ul>
     </nav>
   </header>
+
+  <div id="overlay" onclick="closeMenu()"></div>
 
   <main>
     <section class="gallery-grid">
