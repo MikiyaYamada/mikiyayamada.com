@@ -28,7 +28,6 @@ function toggleDropdown(e) {
     dropdown.classList.add("show");
     toggleIcon.textContent = "▲";
     }
-  toggleIcon.textContent = dropdown.classList.contains("show") ? "▲" : "▼";
 }
 
 // スクロールフェード
