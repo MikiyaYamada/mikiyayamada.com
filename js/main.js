@@ -18,10 +18,9 @@ function toggleDropdown(e) {
   const dropdown = document.getElementById("gallery-dropdown");
   dropdown.classList.toggle("show");
     // ▼↔▲ トグル（オプション）
-  const toggleIcon = e.currentTarget;
+  const toggleIcon = e.target;
   toggleIcon.textContent = dropdown.classList.contains("show") ? "▲" : "▼";
  }
-}
 
 // スクロールフェード
 document.addEventListener("DOMContentLoaded", () => {
