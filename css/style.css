@@ -239,11 +239,22 @@ nav li a {
   #nav-menu ul {
     flex-direction: column;
   }
+  
+  .dropdown {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
 
   .dropdown-content {
+    display: none;
+    flex-direction: colum;
     position: static;
-    background: #222;
+    background-color: #222;
     padding-left: 1rem;
+    width: 100%;
   }
 
   .dropdown-content.show {
@@ -258,6 +269,10 @@ nav li a {
 
   .dropdown-toggle {
     display: inline;
+    cursor: pointer;
+    color: white;
+    padding: 0.75rem 1rem;
+    user-select: none;
   }
 
   #overlay.show {
