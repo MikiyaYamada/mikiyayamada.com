@@ -160,6 +160,20 @@ nav li a {
   #overlay {
   z-index: 1000; /* nav-menu より下に */
   }
+  .dropdown-toggle {
+  background: none;
+  border: none;
+  color: white;
+  font: inherit;
+  padding: 1rem;
+  text-align: left;
+  width: 100%;
+  cursor: pointer;
+}
+
+.dropdown-toggle:hover {
+  background-color: #222;
+}
 }
 
 /* PC */
