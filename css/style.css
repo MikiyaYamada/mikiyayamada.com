@@ -198,6 +198,7 @@ nav li a {
   .dropdown:hover .dropdown-content {
     display: block;
   }
+  
   .dropdown-content.show {
     display: none !important;
   }
@@ -251,7 +252,7 @@ nav li a {
     width: 100%;
     padding: 1rem;
     color: white;
-    text-sizing: border-box;
+    box-sizing: border-box;
  }
   
   .dropdown-label {
@@ -260,7 +261,7 @@ nav li a {
   
   .dropdown-content {
     display: none;
-    flex-direction: colum;
+    flex-direction: column;
     background-color: #222;
     padding-left: 1rem;
     width: 100%;
