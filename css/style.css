@@ -241,13 +241,22 @@ nav li a {
   }
   
   .dropdown {
-    position: relative;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
   }
-
+  
+ .dropdown-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    color: white;
+    cursor: default;
+ }
+  
   .dropdown-content {
     display: none;
     flex-direction: colum;
