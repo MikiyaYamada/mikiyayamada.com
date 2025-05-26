@@ -157,6 +157,9 @@ nav li a {
   .logo {
     margin: 0 auto;
   }
+  #overlay {
+  z-index: 1000; /* nav-menu より下に */
+  }
 }
 
 /* PC */
