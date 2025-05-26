@@ -49,3 +49,24 @@ window.addEventListener("resize", () => {
     if (toggleIcon) toggleIcon.textContent = "▼";
   }
 });
+istener("DOMContentLoaded", () => {
+  // オプション（交差判定のしきい値）
+  const options = {
+    threshold: 0.1
+  };
+
+  // コールバック関数：対象が見えたら visible クラスを追加、見えなくなったら削除
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      } else {
+        entry.target.classList.remove('visible');
+      }
+    });
+  }, options);
+
+  // .fade クラスがついたすべての要素を監視対象にする
+  document.querySelectorAll('.fade').forEach(el => {
+    observer.observe(el);
+  });
