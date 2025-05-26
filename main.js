@@ -17,7 +17,6 @@ function closeMenu() {
 function toggleDropdown(e) {
   e.preventDefault();
   e.stopPropagation();
-  if (window.innerWidth >= 769) return;
 
   const dropdown = document.getElementById("gallery-dropdown");
   const toggleIcon = e.currentTarget;
