@@ -1,112 +1,49 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mikiya Yamada</title>
-  
-  <!-- Lightbox CSS -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet" />
-
-  <!-- AOS CSS -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
-  <link rel="stylesheet" href="../style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mikiya Yamada Photography</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-
-  <!-- ヘッダー -->
   <header>
     <div class="header-container">
-      <img src="images/logo.png" alt="Mikiya Yamada Logo" class="logo">
       <h1 class="header-title">Mikiya Yamada Photography</h1>
-      <span class="menu-toggle" id="menu-toggle">$#9776;</span>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
     </div>
-      <nav id="nav-menu">
-        <ul>
-          <li> <a href="../index.html">Home</a> <li>
-          <li class="dropdown">
-            <a href="#">Gallery</a>
-            <ul class="dropdown-content">
-              <li><a href="galleries/landscape.html">Landscape</a><li>
-              <li><a href="galleries/woodland.html">Woodland</a><li>
-              <li><a href="galleries/waterfall.html">Waterfall</a><li>
-      　　  </ul>
-         </li>
-         <li><a href="#about.html">About</a><li>
-         <li><a href="#contact.html">Contact</a><li>
-       </ul>
-     </nav>
+    <nav id="nav-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="#" onclick="toggleDropdown(event)">Gallery</a>
+          <ul class="dropdown-content" id="gallery-dropdown">
+            <li><a href="gallery/landscape.html">Landscape</a></li>
+            <li><a href="gallery/woodland.html">Woodland</a></li>
+            <li><a href="gallery/waterfall.html">Waterfall</a></li>
+          </ul>
+        </li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- ギャラリー -->
- <section class="gallery-preview">
-      <h2>Recent Works</h2>
-      <div class="grid">
-        <a href="galleries/landscape.html"><img src="images/mountain-thumb.jpg" alt="landscape"></a>
-        <a href="galleries/woodland.html"><img src="images/forest-thumb.jpg" alt="woodland"></a>
-        <a href="galleries/waterfall.html"><img src="images/valley-thumb.jpg" alt="waterfall"></a>
+  <main>
+    <section class="gallery-grid">
+      <div class="fade">
+        <a href="images/sample1.jpg" data-lightbox="gallery"><img src="images/sample1.jpg" alt="Sample 1"></a>
       </div>
-  </section>
+      <div class="fade">
+        <a href="images/sample2.jpg" data-lightbox="gallery"><img src="images/sample2.jpg" alt="Sample 2"></a>
+      </div>
+    </section>
+  </main>
 
-  <!-- フッター -->
   <footer>
-    &copy; 2025 Mikiya Yamada
+    <p>&copy; 2025 Mikiya Yamada Photography</p>
   </footer>
 
-  <!-- Lightbox JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
-
-  <!-- AOS JS -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-
-  <!-- Intersection Observer -->
-  <script>
-  const options = {
-    threshold: 0.1
-  };
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-      } else {
-        entry.target.classList.remove('visible');
-      }
-    });
-  }, options);
-
-  document.querySelectorAll('.fade').forEach(el => {
-    observer.observe(el);
-  });
-</script>
-
-  <!-- ハンバーガーメニュー用 -->
- <script>
-  function toggleMenu() {
-    const nav = document.getElementById("nav-menu");
-    nav.classList.toggle('active');
-  }
-
-  function toggleDropdown(e) {
-    e.preventDefault();
-    const dropdown = document.getElementById("gallery-dropdown");
-    dropdown.classList.toggle("show");
-  }
- </script>
- <script>
-   document.addEventListener('DOMContentLoaded', function () {
-    const menuToggle = document.getElementById('menu-toggle');
-    const navMenu = document.getElementById('nav-menu');
-
-    menuToggle.addEventListener('click', function () {
-      navMenu.classList.toggle('active');
-    });
-  });
-</script>
+  <script src="js/main.js"></script>
 </body>
 </html>
