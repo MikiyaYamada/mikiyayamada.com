@@ -1,68 +1,49 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mikiya Yamada Photography</title>
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/main.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mikiya Yamada</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <div class="header-container">
-      <img src="images/logo.png" alt="Mikiya Yamada Logo" class="logo">
-      <div class="menu-toggle" onclick="toggleMenu(this)">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <nav id="nav-menu">
-        <ul>
-          <li><a href="index.html" onclick="closeMenu()">Home</a></li>
-          <li class="dropdown">
-            <div class="dropdown-header">
-              <span class="dropdown-label">Galleries</span>
-              <span class="dropdown-toggle" onclick="toggleDropdown(event)">▼</span>
-            </div>
-            <ul class="dropdown-content" id="gallery-dropdown">
-              <li><a href="galleries/landscape.html" onclick="closeMenu()">Landscape</a></li>
-              <li><a href="galleries/woodland.html" onclick="closeMenu()">Woodland</a></li>
-              <li><a href="galleries/waterfall.html" onclick="closeMenu()">Waterfall</a></li>
-            </ul>
-          </li>
-          <li><a href="about.html" onclick="closeMenu()">About</a></li>
-          <li><a href="contact.html" onclick="closeMenu()">Contact</a></li>
-        </ul>
-      </nav>
+  <header class="header-container">
+    <div class="menu-toggle" onclick="toggleMenu(this)">
+      <span></span><span></span><span></span>
     </div>
+    <img src="images/logo.png" alt="Logo" class="logo" />
+    <nav id="nav-menu">
+      <ul>
+        <li><a href="index.html" onclick="closeMenu()">Home</a></li>
+        <li class="dropdown">
+          <div class="dropdown-header">
+            <span class="dropdown-label">Galleries</span>
+            <span class="dropdown-toggle" onclick="toggleDropdown(event)">▼</span>
+          </div>
+          <ul class="dropdown-content" id="gallery-dropdown">
+            <li><a href="galleries/landscape.html" onclick="closeMenu()">Landscape</a></li>
+            <li><a href="galleries/woodland.html" onclick="closeMenu()">Woodland</a></li>
+            <li><a href="galleries/waterfall.html" onclick="closeMenu()">Waterfall</a></li>
+          </ul>
+        </li>
+        <li><a href="#about" onclick="closeMenu()">About</a></li>
+        <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+      </ul>
+    </nav>
   </header>
-   
+
+  <div id="overlay" onclick="closeMenu()"></div>
+
   <main>
     <section class="gallery-preview">
-      <div class="grid">
-        <div class="fade">
-          <a href="galleries/landscape.html">
-            <img src="images/landscape.jpg" alt="landscape">
-          </a>
-        </div>
-        <div class="fade">
-          <a href="galleries/Woodland.html">
-            <img src="images/Woodland.jpg" alt="Woodland">
-          </a>
-        </div>
-        <div class="fade">
-          <a href="galleries/WaterFall.html">
-            <img src="images/Waterfall.jpg" alt="Waterfall">
-          </a>
-        </div>
-     </div>
-   </section>
+      <div class="grid fade">
+        <img src="images/Landscape.jpg" alt="Landscape" />
+        <img src="images/Woodland.jpg" alt="Woodland" />
+        <img src="images/Waterfall.jpg" alt="Waterfall" />
+      </div>
+    </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Mikiya Yamada Photography</p>
-  </footer>
-
-  
+  <script src="main.js"></script>
 </body>
 </html>
