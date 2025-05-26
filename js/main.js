@@ -16,6 +16,8 @@ function closeMenu() {
 
 function toggleDropdown(e) {
   e.preventDefault();
+   // PCではJSによる表示切り替えを無効化（hoverで対応）
+  if (window.innerWidth >= 769) return;
   const dropdown = document.getElementById("gallery-dropdown");
   dropdown.classList.toggle("show");
 }
@@ -30,6 +32,16 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }, { threshold: 0.1 });
+
+  document.addEventListener('click', (e) => {
+  const dropdown = document.getElementById("gallery-dropdown");
+  const trigger = e.target.closest('.dropdown');
+
+  // dropdown外をクリックしたら閉じる（モバイルのみ）
+  if (!trigger && window.innerWidth < 769) {
+    dropdown.classList.remove("show");
+  }
+});
 
   document.querySelectorAll('.fade').forEach(el => observer.observe(el));
 });
