@@ -150,6 +150,11 @@ nav li a {
   transform: translateY(0);
 }
 
+/* テスト：常に visible を付けてみる */
+.fade {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
 @media (min-width: 769px) {
   .header-container {
     max-width: 1100px;
