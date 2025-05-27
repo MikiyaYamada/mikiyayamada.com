@@ -258,13 +258,7 @@ nav li a {
     width: 100%;
     padding: 1rem;
     color: white;
-    box-sizing: border-box;
  }
-  
-  .dropdown-label {
-    flex: 1; /* 左側に寄せる */
-  }
-  
   .dropdown-content {
     display: none;
     flex-direction: column;
@@ -273,6 +267,12 @@ nav li a {
     width: 100%;
     box-sizing: border-box;
   }
+  
+  .dropdown-label {
+    flex: 1; /* 左側に寄せる */
+  }
+  
+  
 
   .dropdown-content.show {
     display: flex;
@@ -284,7 +284,7 @@ nav li a {
 
   .dropdown-toggle {
     cursor: pointer;
-    padding-left: 1rem;
+    padding-left: 0.5rem;
     user-select: none;
   }
 
