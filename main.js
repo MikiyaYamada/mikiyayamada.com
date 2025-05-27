@@ -26,9 +26,8 @@ function toggleDropdown(e) {
   toggleIcon.textContent = isShown ? "▼" : "▲";
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  document.getElementById("gallery-dropdown")?.classList.remove("show");
 
+document.addEventListener("DOMContentLoaded", () => {
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
