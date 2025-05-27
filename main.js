@@ -22,13 +22,7 @@ function toggleDropdown(e) {
   const toggleIcon = document.querySelector(".dropdown .dropdown-toggle");
 
   const isNowShown = dropdown.classList.toggle("show");
-   if (isNowShown) {
-    dropdown.classList.remove("show");
-    toggleIcon.textContent = "▼";
-  } else {
-    dropdown.classList.add("show");
-    toggleIcon.textContent = "▲";
-  }
+   toggleIcon.textContent = isNowShown ? "▲" : "▼";
 }
 
 
