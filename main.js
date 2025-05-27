@@ -21,15 +21,11 @@ function toggleDropdown(e) {
   const dropdown = document.getElementById("gallery-dropdown");
   const toggleIcon = document.querySelector(".dropdown .dropdown-toggle");
 
-  // .show を持っているかどうか
-  const isNowShown = dropdown.classList.contains("show");
-
-  if (isNowShown) {
-    // 表示されていた場合：閉じる
+  const isNowShown = dropdown.classList.toggle("show");
+   if (isNowShown) {
     dropdown.classList.remove("show");
     toggleIcon.textContent = "▼";
   } else {
-    // 閉じていた場合：開く
     dropdown.classList.add("show");
     toggleIcon.textContent = "▲";
   }
