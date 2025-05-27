@@ -201,9 +201,7 @@ nav li a {
     z-index: 1002;
   }
 
-   .dropdown-content.show {
-    display: none !important;
-  }
+
    .dropdown:hover .dropdown-content {
     display: flex;
   }
