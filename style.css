@@ -257,11 +257,6 @@ nav li a {
  }
   .dropdown-content {
     display: none;
-    flex-direction: column;
-    background-color: #222;
-    padding-left: 1rem;
-    width: 100%;
-    box-sizing: border-box;
   }
   
   .dropdown-label {
