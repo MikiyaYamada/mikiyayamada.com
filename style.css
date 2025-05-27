@@ -124,6 +124,17 @@ nav li a {
   display: none;
 }
 
+/* 共通の初期状態：非表示 */
+#gallery-dropdown {
+  display: none;
+}
+
+/* モバイル＆PC共通：.show がついたら表示 */
+#gallery-dropdown.show {
+  display: flex; /* モバイル時はflex、PCならblockでもOK */
+  flex-direction: column;
+}
+
 .gallery-preview .grid img {
   max-width: 90%;
   height: auto;
