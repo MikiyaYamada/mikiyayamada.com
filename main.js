@@ -24,10 +24,10 @@ function toggleDropdown(e) {
   const isNowShown = dropdown.classList.toggle("show");
   if (isNowShown) {
     dropdown.classList.add("show");
-    toggleIcon.textContent = "▲";
+    toggleIcon.textContent = "▼";
   } else {
     dropdown.classList.remove("show");
-    toggleIcon.textContent = "▼";
+    toggleIcon.textContent = "▲";
   }
 }
 
