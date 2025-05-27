@@ -19,7 +19,7 @@ function toggleDropdown(e) {
   e.stopPropagation();
 
   const dropdown = document.getElementById("gallery-dropdown");
-  const toggleIcon = e.currentTarget;
+  const toggleIcon = document.querySelector(".dropdown .dropdown-toggle");
 
   const isNowShown = dropdown.classList.toggle("show");
   toggleIcon.textContent = isNowShown ? "▲" : "▼";
