@@ -147,6 +147,10 @@ nav li a {
   transform: translateY(0);
 }
 
+.gallery-dropdown{
+  display: none;
+}
+
 @media (min-width: 769px) {
   .header-container {
     max-width: 1100px;
