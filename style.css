@@ -204,6 +204,13 @@ nav li a {
    .dropdown-content.show {
     display: none !important;
   }
+   .dropdown:hover .dropdown-content {
+    display: flex;
+  }
+
+  .dropdown-toggle {
+    display: none;
+  }
 }
 
 /* モバイル対応 */
@@ -254,7 +261,7 @@ nav li a {
     width: 100%;
     padding: 1rem;
     color: white;
- }
+  }
   .dropdown-content {
     display: none;
   }
@@ -274,9 +281,7 @@ nav li a {
   }
 
   .dropdown-toggle {
-    cursor: pointer;
-    padding-left: 0.5rem;
-    user-select: none;
+    display: inline;
   }
 
   #overlay.show {
