@@ -220,6 +220,9 @@ nav li a {
     .dropdown:hover .dropdown-content {
     display: block;
     }
+    .dropdown-content.show {
+    display: none !important;
+  }
 }
 
 /* モバイル対応 */
