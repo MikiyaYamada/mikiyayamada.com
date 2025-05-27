@@ -28,6 +28,7 @@ function toggleDropdown(e) {
 
 
 document.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("gallery-dropdown")?.classList.remove("show");
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
