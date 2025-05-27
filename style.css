@@ -270,7 +270,9 @@ nav li a {
     flex: 1; /* 左側に寄せる */
   }
   
-  
+    .dropdown-toggle {
+    display: inline;
+  }
 
   .dropdown-content.show {
     display: flex;
@@ -278,10 +280,6 @@ nav li a {
 
   .dropdown:hover .dropdown-content {
     display: none;
-  }
-
-  .dropdown-toggle {
-    display: inline;
   }
 
   #overlay.show {
