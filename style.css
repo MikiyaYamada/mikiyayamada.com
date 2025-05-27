@@ -96,18 +96,6 @@ nav li a {
   user-select: none;
 }
 
-.dropdown-content {
-  display: none;
-  flex-direction: column;
-  background-color: #222;
-  padding-left: 1rem;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  min-width: 160px;
-  z-index: 1002;
-}
-
 .dropdown-content.show {
   display: flex;
   flex-direction: column;
@@ -199,6 +187,17 @@ nav li a {
     display: flex;
     align-items: center;
     gap: 0.3rem;
+  }
+  .dropdown-content {
+  display: none;
+  flex-direction: column;
+  background-color: #222;
+  padding-left: 1rem;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 160px;
+  z-index: 1002;
   }
 }
 
