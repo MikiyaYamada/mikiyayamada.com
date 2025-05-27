@@ -19,12 +19,17 @@ function toggleDropdown(e) {
   e.stopPropagation();
 
   const dropdown = document.getElementById("gallery-dropdown");
-  const toggleIcon = e.currentTarget;
+  const toggleIcon = document.querySelector(".dropdown .dropdown-toggle");
 
-  if (dropdown.classList.contains("show")) {
+  // .show を持っているかどうか
+  const isNowShown = dropdown.classList.contains("show");
+
+  if (isNowShown) {
+    // 表示されていた場合：閉じる
     dropdown.classList.remove("show");
     toggleIcon.textContent = "▼";
   } else {
+    // 閉じていた場合：開く
     dropdown.classList.add("show");
     toggleIcon.textContent = "▲";
   }
