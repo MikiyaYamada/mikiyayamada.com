@@ -27,7 +27,14 @@ function toggleDropdown(e) {
 
 
 document.addEventListener("DOMContentLoaded", () => {
-  document.getElementById("gallery-dropdown")?.classList.remove("show");
+  // ギャラリードロップダウンを初期状態で閉じる
+  const dropdown = document.getElementById("gallery-dropdown");
+  const toggleIcon = document.querySelector(".dropdown-toggle");
+
+  if (dropdown) dropdown.classList.remove("show");
+  if (toggleIcon) toggleIcon.textContent = "▼";
+
+  // フェードイン処理
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -40,7 +47,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.querySelectorAll(".fade").forEach(el => observer.observe(el));
 });
-
 window.addEventListener("resize", () => {
   if (window.innerWidth >= 769) {
     document.getElementById("gallery-dropdown")?.classList.remove("show");
