@@ -205,10 +205,10 @@ nav li a {
     width: 30px;
     height: 24px;
     cursor: pointer;
-    position: fixed;
+    position: relative;
     top: 1.2rem;
     left: 1.2rem;
-    z-index: 9999 !important;
+    z-index: 1100;
   }
 
   .header-container {
