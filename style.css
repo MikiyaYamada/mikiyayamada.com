@@ -190,16 +190,7 @@ nav li a {
     gap: 0.3rem;
   }
 
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background: #222;
-    padding: 0.5rem 0;
-    min-width: 160px;
-    z-index: 1002;
-  }
+
 
 
    .dropdown:hover .dropdown-content {
