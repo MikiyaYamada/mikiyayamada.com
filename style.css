@@ -190,16 +190,7 @@ nav li a {
     gap: 0.3rem;
   }
 
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background: #222;
-    padding: 0.5rem 0;
-    min-width: 160px;
-    z-index: 1002;
-  }
+ 
 
    .dropdown-content.show {
     display: none !important;
@@ -255,9 +246,6 @@ nav li a {
     padding: 1rem;
     color: white;
  }
-  .dropdown-content {
-    display: none;
-  }
   
   .dropdown-label {
     flex: 1; /* 左側に寄せる */
