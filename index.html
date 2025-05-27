@@ -14,27 +14,25 @@
     </div>
     <img src="images/logo.png" alt="Logo" class="logo" />
     <nav id="nav-menu">
-  <ul>
-    <li><a href="index.html" onclick="closeMenu()">Home</a></li>
-
-    <li class="dropdown">
-      <div class="dropdown-header">
-        <span class="dropdown-label">Galleries</span>
-        <span class="dropdown-toggle" onclick="toggleDropdown(event)">▼</span><!-- モバイル用 -->
-      </div>
-      <!-- ▼ この位置でドロップダウン展開させる -->
-      <ul class="dropdown-content" id="gallery-dropdown">
-        <li><a href="galleries/landscape.html" onclick="closeMenu()">Landscape</a></li>
-        <li><a href="galleries/woodland.html" onclick="closeMenu()">Woodland</a></li>
-        <li><a href="galleries/waterfall.html" onclick="closeMenu()">Waterfall</a></li>
-      </ul>
-    </li>
-
-    <li><a href="#about" onclick="closeMenu()">About</a></li>
-    <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
-  </ul>
-</nav>
-  </header>
+      <ul>
+        <li><a href="index.html" onclick="closeMenu()">Home</a></li>
+        <li class="dropdown">
+          <div class="dropdown-header">
+            <span class="dropdown-label">Galleries</span>
+            <span class="dropdown-toggle" onclick="toggleDropdown(event)">▼</span><!-- モバイル用 -->
+          </div>
+          <!-- ▼ この位置でドロップダウン展開させる -->
+          <ul class="dropdown-content" id="gallery-dropdown">
+            <li><a href="galleries/landscape.html" onclick="closeMenu()">Landscape</a></li>
+            <li><a href="galleries/woodland.html" onclick="closeMenu()">Woodland</a></li>
+            <li><a href="galleries/waterfall.html" onclick="closeMenu()">Waterfall</a></li>
+          </ul>
+        </li>
+      <li><a href="#about" onclick="closeMenu()">About</a></li>
+      <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
   <div id="overlay" onclick="closeMenu()"></div>
 
