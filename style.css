@@ -206,8 +206,8 @@ nav li a {
     height: 24px;
     cursor: pointer;
     position: fixed;
-    top: 1.2rem;
-    left: 1.2rem;
+    top: 1.5rem;
+    left: 1.5rem;
     z-index: 1100;
   }
 
