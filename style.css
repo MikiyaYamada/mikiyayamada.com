@@ -200,9 +200,7 @@ nav li a {
     min-width: 160px;
     z-index: 1002;
   }
-    .dropdown:hover .dropdown-content {
-    display: block;
-  }
+
    .dropdown-content.show {
     display: none !important;
   }
