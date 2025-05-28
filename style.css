@@ -238,6 +238,7 @@ nav li a {
 
   #nav-menu ul {
     flex-direction: column;
+    position: static;
   }
   
   .dropdown {
