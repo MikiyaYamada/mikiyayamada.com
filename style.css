@@ -281,7 +281,7 @@ nav li a {
     z-index: 1002;
 }
 
-  .dropdown-ul {
+  .dropdown ul {
     flex-direction: column;
   }
 
