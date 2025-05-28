@@ -269,7 +269,7 @@ nav li a {
     flex-direction: column;
     background-color: #222;
     padding-left: 1rem;
-    position: absolute;
+    position: static;
     min-width: 160px;
     z-index: 1002;
   }
