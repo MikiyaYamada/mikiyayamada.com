@@ -274,6 +274,10 @@ nav li a {
     z-index: 1002;
   }
 
+  .dropdown-content li a {
+  display: flex;
+}
+
   #overlay.show {
     display: block;
   }
