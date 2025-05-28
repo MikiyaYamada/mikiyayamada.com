@@ -116,7 +116,7 @@ nav li a {
   color: white;
 }
 
-.dropdown ul {
+.dropdown ul class{
   display: none;
 }
 
