@@ -188,10 +188,6 @@ nav li a {
     font-size: 1rem;
     padding: 1rem;
   }
-
-  .dropdown:hover .dropdown {
-    display: flex;
-  }
    .dropdown:hover .dropdown-content {
     display: flex;
   }
