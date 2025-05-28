@@ -116,6 +116,9 @@ nav li a {
   color: white;
 }
 
+.dropdown ul {
+  display: none;
+
 #overlay {
   position: fixed;
   top: 0; left: 0;
@@ -185,7 +188,7 @@ nav li a {
     padding: 1rem;
   }
   
-   .dropdown-header:hover .dropdown li a {
+   .dropdown-header:hover .dropdown ul {
     display: flex;
   }
 }
