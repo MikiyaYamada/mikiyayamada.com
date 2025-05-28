@@ -268,14 +268,17 @@ nav li a {
     display: flex;
     flex-direction: column;
     background-color: #222;
-    padding-left: 0;
+    padding-left: 1rem;
     position: static;
     min-width: 160px;
     z-index: 1002;
   }
 
   .dropdown-content li a {
-  display: flex;
+    display: flex;
+    flex-direction: column;
+    position: static;
+    z-index: 1002;
 }
 
   #overlay.show {
