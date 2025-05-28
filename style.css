@@ -108,7 +108,6 @@ nav li a {
   left: 0;
   min-width: 160px;
   z-index: 1002;
-  margin-top: 25px;
 }
 
 .dropdown-content li a {
@@ -188,7 +187,7 @@ nav li a {
 
   .dropdown {
     position: relative;
-    display: flex;
+    display: none;
     align-items: center;
     gap: 0.3rem;
   }
