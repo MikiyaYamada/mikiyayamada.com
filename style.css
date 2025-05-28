@@ -268,10 +268,6 @@ nav li a {
     display: flex;
   }
 
-  .dropdown:hover .dropdown-content {
-    display: none;
-  }
-
   #overlay.show {
     display: block;
   }
