@@ -236,7 +236,7 @@ nav li a {
     transform: translateX(0);
   }
 
-  .nav ul {
+  #nav-menu ul {
     flex-direction: column;
   }
   
