@@ -115,9 +115,6 @@ nav li a {
   text-align: left;
   color: white;
 }
-.dropdown ul li{
-  display: none;
-}
 
 #overlay {
   position: fixed;
@@ -191,7 +188,7 @@ nav li a {
   .dropdown:hover .dropdown {
     display: flex;
   }
-   .dropdown:hover .dropdown ul li {
+   .dropdown:hover .dropdown-content {
     display: flex;
   }
 }
