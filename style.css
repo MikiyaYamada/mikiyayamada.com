@@ -246,19 +246,18 @@ nav li a {
   
  .dropdown-header {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 0.3rem
+    width: 100%;
     padding: 1rem;
     color: white;
-    cursor: pointer;
   }
   .dropdown-content {
     display: none;
   }
   
   .dropdown-label {
-    color: white;
-    user-serect: none;
+     flex: 1; /* 左側に寄せる */
   }
   
 
@@ -284,10 +283,9 @@ nav li a {
     flex-direction: column;
   }
 
-  .dropdown-toggle {
-    color: white;
-    font-size: 0.9rem;
-    user-serect: none;
+ .dropdown-toggle {
+    display: inline;
+    position: absolute
   }
   
   #overlay.show {
