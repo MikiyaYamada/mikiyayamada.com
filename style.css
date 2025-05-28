@@ -312,17 +312,13 @@ nav li a {
   user-select: none;
 }
 
-.dropdown-content {
-  display: none;
+.dropdown-content.show {
+  display: flex;
   flex-direction: column;
   background-color: #222;
   padding: 0;
   width: 100%;
   text-align: center; /* 🔸中央揃え */
-}
-
-.dropdown-content.show {
-  display: flex;
 }
 
 .dropdown-content li a {
