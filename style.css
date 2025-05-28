@@ -171,7 +171,6 @@ nav li a {
   }
 
   #nav-menu ul {
-    display: flex;
     gap: 2rem;
     list-style: none;
     padding: 0;
