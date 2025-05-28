@@ -285,7 +285,7 @@ nav li a {
 
  .dropdown-toggle {
     display: inline;
-    position: absolute
+    position: relative;
   }
   
   #overlay.show {
