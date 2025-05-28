@@ -186,6 +186,10 @@ nav li a {
     font-size: 1rem;
     padding: 1rem;
   }
+
+     .dropdown-header:hover .dropdown-content {
+    display: flex;
+  }
    .dropdown-header:hover .dropdown-content li a {
     display: flex;
   }
