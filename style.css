@@ -114,6 +114,7 @@ nav li a {
   padding: 0.75rem 1rem;
   text-align: left;
   color: white;
+  display: none;
 }
 
 #overlay {
@@ -185,7 +186,7 @@ nav li a {
     padding: 1rem;
   }
   
-   .dropdown-header:hover .dropdown-content {
+   .dropdown-header:hover .dropdown-content li a {
     display: flex;
   }
 }
