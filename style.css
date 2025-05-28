@@ -295,5 +295,41 @@ nav li a {
   .gallery-preview .grid img {
     max-width: 90%;
   }
+  .dropdown-header {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* 中央寄せにする */
+  gap: 0.3rem; /* Galleriesと▼の間隔 */
+  width: 100%;
+  padding: 1rem;
+  color: white;
+}
+
+.dropdown-label,
+.dropdown-toggle {
+  font-size: 1rem;
+  color: white;
+  user-select: none;
+}
+
+.dropdown-content {
+  display: none;
+  flex-direction: column;
+  background-color: #222;
+  padding: 0;
+  width: 100%;
+  text-align: center; /* 🔸中央揃え */
+}
+
+.dropdown-content.show {
+  display: flex;
+}
+
+.dropdown-content li a {
+  padding: 1rem;
+  color: white;
+  display: block;
+  text-align: center; /* 🔸テキスト中央揃え */
+}
 }
 
