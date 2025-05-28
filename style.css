@@ -229,7 +229,7 @@ nav li a {
     padding-top: 80px;
     transform: translateX(-100%);
     transition: transform 0.3s ease;
-    z-index: 1002;
+    z-index: 1001;
   }
 
   #nav-menu.active {
@@ -273,13 +273,6 @@ nav li a {
     min-width: 160px;
     z-index: 1002;
   }
-
-  .dropdown-content li a {
-    display: flex;
-    flex-direction: column;
-    position: static;
-    z-index: 1002;
-}
 
   #overlay.show {
     display: block;
