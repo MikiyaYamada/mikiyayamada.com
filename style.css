@@ -185,7 +185,7 @@ nav li a {
     padding: 1rem;
   }
   
-   .dropdown:hover .dropdown-content {
+   .dropdown-label:hover .dropdown-content {
     display: flex;
   }
 }
