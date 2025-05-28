@@ -275,7 +275,7 @@ nav li a {
     .dropdown-content li a {
     display: flex;
     flex-direction: column;
-    position: static;
+    position: relative;
     z-index: 1002;
 }
 
