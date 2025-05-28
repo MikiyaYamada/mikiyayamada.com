@@ -326,5 +326,10 @@ nav li a {
   display: block;
   text-align: center; /* 🔸テキスト中央揃え */
 }
+
+.menu-toggle.active {
+  width: 30px;
+  height: 24px;
+}
 }
 
