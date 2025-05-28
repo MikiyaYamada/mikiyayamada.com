@@ -239,10 +239,6 @@ nav li a {
   #nav-menu ul {
     flex-direction: column;
   }
-
-  .nav li a {
-    position: static;
-  }
   
   .dropdown {
     width: 100%;
