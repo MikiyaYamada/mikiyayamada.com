@@ -260,9 +260,7 @@ nav li a {
     flex: 1; /* 左側に寄せる */
   }
   
-    .dropdown-toggle {
-    display: inline;
-  }
+
 
   .dropdown-content.show {
     display: flex;
@@ -281,10 +279,15 @@ nav li a {
     z-index: 1002;
 }
 
-  .dropdown ul {
+  .dropdown-header {
     flex-direction: column;
   }
 
+  .dropdown-toggle {
+    display: inline;
+    position: absolute
+  }
+  
   #overlay.show {
     display: block;
   }
