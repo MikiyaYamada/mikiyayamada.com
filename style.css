@@ -114,6 +114,8 @@ nav li a {
   padding: 1rem 1rem;
   text-align: left;
   color: white;
+}
+.dropdown ul li{
   display: none;
 }
 
@@ -186,7 +188,7 @@ nav li a {
     padding: 1rem;
   }
 
-   .dropdown-header:hover .dropdown-content li a {
+   .dropdown-label:hover .dropdown ul li {
     display: flex;
   }
 }
