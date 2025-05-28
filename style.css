@@ -47,13 +47,13 @@ body {
 }
 
 .menu-toggle.active span:nth-child(1) {
-  transform: rotate(45deg) translateY(8px) translateX(-15px);
+  transform: rotate(45deg) translateY(0px);
 }
 .menu-toggle.active span:nth-child(2) {
   opacity: 0;
 }
 .menu-toggle.active span:nth-child(3) {
-  transform: rotate(-45deg) translateY(-8px);
+  transform: rotate(-45deg) translateY(0px);
 }
 
 #nav-menu {
