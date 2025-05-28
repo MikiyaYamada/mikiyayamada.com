@@ -114,6 +114,7 @@ nav li a {
   padding: 1rem 1rem;
   text-align: left;
   color: white;
+  display: none;
 }
 
 #overlay {
