@@ -328,7 +328,6 @@ nav li a {
 
  .dropdown-toggle {
     display: inline-block;
-    position: relative;
     font-size: 20px;
     user-select: none;
   }
