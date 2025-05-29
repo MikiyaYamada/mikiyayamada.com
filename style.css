@@ -353,7 +353,6 @@ nav li a {
 
 .dropdown-content.show {
   display: flex;
-  flex-direction: column;
   background-color: white;
   padding: 0;
   width: 100%;
