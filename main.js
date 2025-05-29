@@ -35,14 +35,15 @@ document.addEventListener("DOMContentLoaded", () => {
   if (toggleIcon) toggleIcon.textContent = "▼";
 
   // フェードイン処理
-  const observer = new IntersectionObserver(entries => {
+ const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add("visible");
     } else {
       entry.target.classList.remove("visible");
-    });
-  }, { threshold: 0.1 });
+    }
+  });
+}, { threshold: 0.1 });
   document.querySelectorAll(".fade").forEach(el => observer.observe(el));
 });
 window.addEventListener("resize", () => {
