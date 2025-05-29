@@ -75,7 +75,7 @@ nav li a {
   text-decoration: none;
   padding: 1rem;
   display: block;
-  font-size: 10px;
+  font-size: 30px;
 }
 
 .dropdown {
@@ -305,7 +305,7 @@ nav li a {
 
 .dropdown-label,
 .dropdown-toggle {
-  font-size: 1rem;
+  font-size: 30px;
   user-select: none;
 }
 
