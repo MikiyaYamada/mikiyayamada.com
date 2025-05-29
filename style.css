@@ -180,7 +180,7 @@ nav li a {
   #nav-menu li a,
   .dropdown-label,
   .dropdown-toggle {
-    color: white;
+    color: #111;
     text-decoration: none;
     font-size: 1rem;
     padding: 1rem;
