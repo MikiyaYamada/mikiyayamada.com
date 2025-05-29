@@ -368,7 +368,7 @@ nav li a {
 }
 
 .dropdown-content.show li a {
-  position: absolute;
+  position: static;
 }
 
 .menu-toggle.active {
