@@ -323,7 +323,7 @@ nav li a {
 }
 
   .dropdown-header {
-    flex-direction: column;
+    position: relative;
   }
 
  .dropdown-toggle {
