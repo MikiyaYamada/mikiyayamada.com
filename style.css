@@ -168,6 +168,9 @@ nav li a {
     height: 48px;
     width: auto;
   }
+  .gallery-preview .grid img{
+    max-width: 50%;
+  }
   #nav-menu {
     display: flex;
     align-items: center;
