@@ -199,23 +199,6 @@ nav li a {
     display: flex;
     font-size: clamp(10px, 1.5vw, 15px);
   }
-  /* ギャラリーと矢印を横並びに */
-.dropdown-header {
-  display: flex;
-  align-items: center;
-  gap: 0.3rem;
-  position: relative;
-  cursor: pointer;
-}
-
-/* ドロップダウンメニュー */
-.dropdown-content {
-  display: none;
-  flex-direction: column;
-  position: absolute;
-  top: 100%; /* .dropdown-headerの真下に配置 */
-  left: 0;
-}
 }
 
 /* モバイル対応 */
