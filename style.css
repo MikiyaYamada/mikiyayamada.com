@@ -154,6 +154,27 @@ nav li a {
   height: auto;
 }
 
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2列に分割 */
+  gap: 1rem; /* 各画像の間のスペース */
+  padding: 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.gallery-grid a img {
+  width: 100%;      /* 親要素にフィットさせる */
+  height: auto;     /* 縦横比維持 */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.gallery-grid a img:hover {
+  transform: scale(1.05);
+}
+
 @media (min-width: 769px) {
   .header-container {
     max-width: 1100px;
