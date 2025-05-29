@@ -188,7 +188,7 @@ nav li a {
 
      .dropdown-header:hover .dropdown-content {
     display: flex;
-       background-color: rgba(34, 34, 34, 0.8);
+       background-color: rgba(175, 175, 175, 0.8);
   }
    .dropdown-header:hover .dropdown-content li a {
     display: flex;
