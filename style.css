@@ -326,7 +326,7 @@ nav li a {
 }
 
   .dropdown-header {
-    position: relative;
+    position: static;
   }
 
  .dropdown-toggle {
