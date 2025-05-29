@@ -304,11 +304,11 @@ nav li a {
   }
   
   .dropdown-label {
-     flex: 1; /* 左側に寄せる */
-  }
+    flex: 1; /* 左側に寄せる */
+    font-size: 20px;
+    user-select: none;
+}
   
-
-
   .dropdown-content.show {
     position: static;
     min-width: 160px;
@@ -348,11 +348,6 @@ nav li a {
   width: 100%;
   padding: 1rem;
   color: white;
-}
-
-.dropdown-label, {
-  font-size: 20px;
-  user-select: none;
 }
 
 .dropdown-content.show {
