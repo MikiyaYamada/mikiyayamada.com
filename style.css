@@ -329,6 +329,8 @@ nav li a {
  .dropdown-toggle {
     display: inline;
     position: relative;
+    font-size: 20px;
+    user-select: none;
   }
   
   #overlay.show {
@@ -348,8 +350,7 @@ nav li a {
   color: white;
 }
 
-.dropdown-label,
-.dropdown-toggle {
+.dropdown-label, {
   font-size: 20px;
   user-select: none;
 }
