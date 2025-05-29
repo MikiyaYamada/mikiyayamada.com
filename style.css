@@ -115,7 +115,7 @@ nav li a {
 .dropdown-content li a {
   padding: 1rem 1rem;
   text-align: left;
-  color: white;
+  color: #111;
   display: none;
 }
   
