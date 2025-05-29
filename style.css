@@ -358,7 +358,6 @@ nav li a {
   width: 100%;
   text-align: center; /* 🔸中央揃え */
   position: static;
-  flex-direction: column;
 }
 
 .dropdown-content li a {
