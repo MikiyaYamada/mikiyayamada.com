@@ -179,7 +179,7 @@ nav li a {
     margin: 0;
   }
 
-  #nav-menu li a,
+  .nav li a,
   .dropdown-label,
   .dropdown-toggle {
     color: #111;
