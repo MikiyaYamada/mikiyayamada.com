@@ -375,7 +375,7 @@ nav li a {
     color: #111
   }
 
-.dropdown ul {
+.dropdown: .dropdown-content.show {
   flex-direction: column;
 }
 }
