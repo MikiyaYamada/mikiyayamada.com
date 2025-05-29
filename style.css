@@ -311,7 +311,7 @@ nav li a {
 .dropdown-content.show {
   display: flex;
   flex-direction: column;
-  background-color: #111;
+  background-color: white;
   padding: 0;
   width: 100%;
   text-align: center; /* 🔸中央揃え */
@@ -319,7 +319,7 @@ nav li a {
 
 .dropdown-content li a {
   padding: 1rem;
-  color: white;
+  color: #111;
   display: block;
   text-align: center; /* 🔸テキスト中央揃え */
 }
