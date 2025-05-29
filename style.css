@@ -136,6 +136,7 @@ nav li a {
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
   transition: transform 0.3s ease;
+  margin-top: 25px;
 }
 
 .gallery-preview .grid img:hover {
@@ -293,7 +294,7 @@ nav li a {
   }
 
   .gallery-preview .grid img {
-    max-width: 90%;
+    max-width: 70%;
   }
   .dropdown-header {
   display: flex;
