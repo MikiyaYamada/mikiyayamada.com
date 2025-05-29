@@ -264,9 +264,6 @@ nav li a {
 
 
   .dropdown-content.show {
-    display: flex;
-    flex-direction: column;
-    background-color: black;
     position: static;
     min-width: 160px;
     z-index: 1002;
@@ -315,7 +312,7 @@ nav li a {
 .dropdown-content.show {
   display: flex;
   flex-direction: column;
-  background-color: black;
+  background-color: #111;
   padding: 0;
   width: 100%;
   text-align: center; /* 🔸中央揃え */
