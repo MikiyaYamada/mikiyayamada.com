@@ -305,7 +305,6 @@ nav li a {
 .dropdown-label,
 .dropdown-toggle {
   font-size: 1rem;
-  color: white;
   user-select: none;
 }
 
