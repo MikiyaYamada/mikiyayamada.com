@@ -282,10 +282,10 @@ nav li a {
     flex-direction: column;
   }
 
-.dropdown-toggle svg {
-  display: inline-block;
-  vertical-align: middle;
-}
+ .dropdown-toggle {
+    display: inline;
+    position: relative;
+  }
   
   #overlay.show {
     display: block;
