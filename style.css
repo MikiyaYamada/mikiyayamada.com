@@ -352,7 +352,6 @@ nav li a {
 }
 
 .dropdown-content.show {
-  position: static;
   display: flex;
   background-color: white;
   padding: 0;
