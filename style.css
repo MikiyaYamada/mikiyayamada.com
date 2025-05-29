@@ -71,7 +71,7 @@ nav ul {
 }
 
 nav li a {
-  color: white;
+  color: #111;
   text-decoration: none;
   padding: 1rem;
   display: block;
@@ -159,7 +159,7 @@ nav li a {
     align-items: center;
     justify-content: center; /* 全体を中央に */
     gap: 2rem;
-    background: #111;
+    background: white;
   }
   .logo {
     height: 48px;
