@@ -311,6 +311,7 @@ nav li a {
   
   .dropdown-content.show {
     position: absolute;
+    top: 100%;
     min-width: 160px;
     z-index: 1002;
   }
