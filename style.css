@@ -281,11 +281,11 @@ nav li a {
 
   nav ul {
     flex-direction: column;
-    position: static;
   }
 
   nav li a {
     font-size: 20px;
+    position: static;
   }
   
   .dropdown {
