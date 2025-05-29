@@ -363,7 +363,7 @@ nav li a {
 .dropdown-content li a {
   font-size: 15px;
   padding: 1rem;
-  color: #000;
+  color: #a0a0a0;
   display: block;
   text-align: center; /* 🔸テキスト中央揃え */
 }
