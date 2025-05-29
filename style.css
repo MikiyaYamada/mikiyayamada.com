@@ -212,7 +212,7 @@ nav li a {
   }
 
   .dropdown-toggle {
-    display: inline-block; /* ← PCでも表示 */
+    display: none;
     font-size: clamp(10px, 1vw, 16px);
     color: #111;
   }
