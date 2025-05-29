@@ -320,7 +320,7 @@ nav li a {
     .dropdown-content li a {
     display: flex;
     flex-direction: column;
-    position: relative;
+    position: static;
     z-index: 1002;
 }
 
