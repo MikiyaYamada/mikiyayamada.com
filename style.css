@@ -291,6 +291,7 @@ nav li a {
   
   .dropdown {
     width: 100%;
+    position: static;
   }
   
  .dropdown-header {
