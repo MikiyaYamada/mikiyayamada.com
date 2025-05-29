@@ -367,6 +367,10 @@ nav li a {
   text-align: center; /* 🔸テキスト中央揃え */
 }
 
+.dropdown-content.show li a {
+  position: absolute;
+}
+
 .menu-toggle.active {
   z-index: 9999;
 
