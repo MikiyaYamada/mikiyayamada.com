@@ -22,13 +22,8 @@ function toggleDropdown(e) {
   const toggleIcon = document.querySelector(".dropdown .dropdown-toggle");
 
   const isNowShown = dropdown.classList.toggle("show");
-   toggleIcon.innerHTML = isNowShown
-    ? `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-         <polyline points="6 15 12 9 18 15"></polyline>
-       </svg>` // ▲上向き
-    : `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-         <polyline points="6 9 12 15 18 9"></polyline>
-       </svg>`; // ▼下向き
+   toggleIcon.textContent = isNowShown ? "▲" : "▼";
+}
 
 
 document.addEventListener("DOMContentLoaded", () => {
