@@ -247,6 +247,10 @@ nav li a {
   #nav-menu ul {
     flex-direction: column;
   }
+
+  .nav li a {
+    font-size: 20px;
+  }
   
   .dropdown {
     width: 100%;
