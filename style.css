@@ -187,13 +187,13 @@ nav li a {
     padding: 1rem;
   }
 
-     .dropdown-header:hover .dropdown-content {
+  .dropdown-header:hover .dropdown-content {
     display: flex;
-       background-color: rgba(225, 225, 225, 0.5);
+    background-color: rgba(225, 225, 225, 0.5);
   }
-   .dropdown-header:hover .dropdown-content li a {
+  .dropdown-header:hover .dropdown-content li a {
     display: flex;
-    fint-size: 15px;
+    font-size: 15px;
   }
 }
 
