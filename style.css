@@ -265,7 +265,7 @@ nav li a {
   .dropdown-content.show {
     display: flex;
     flex-direction: column;
-    background-color: #222;
+    background-color: rgba(34, 34, 34, 0.8);
     position: static;
     min-width: 160px;
     z-index: 1002;
