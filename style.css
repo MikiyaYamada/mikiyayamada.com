@@ -193,6 +193,7 @@ nav li a {
   }
    .dropdown-header:hover .dropdown-content li a {
     display: flex;
+    fint-size: 15px;
   }
 }
 
