@@ -356,6 +356,7 @@ nav li a {
   padding: 0;
   width: 100%;
   text-align: center; /* 🔸中央揃え */
+  position: static;
 }
 
 .dropdown-content li a {
