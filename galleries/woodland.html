@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landscape</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
+</head>
+<body>
+  <header class="header-container">
+    <div class="menu-toggle" onclick="toggleMenu(this)">
+      <span></span><span></span><span></span>
+    </div>
+    <img src="../images/logo.png" alt="Logo" class="logo" />
+    <nav id="nav-menu">
+      <ul>
+        <li><a href="../index.html" onclick="closeMenu()">Home</a></li>
+        <li class="dropdown">
+          <div class="dropdown-header">
+            <span class="dropdown-label">Galleries</span>
+            <span class="dropdown-toggle" onclick="toggleDropdown(event)">▼</span>
+          </div>
+          <ul class="dropdown-content" id="gallery-dropdown">
+            <li><a href="landscape.html" onclick="closeMenu()">Landscape</a></li>
+            <li><a href="woodland.html" onclick="closeMenu()">Woodland</a></li>
+            <li><a href="waterfall.html" onclick="closeMenu()">Waterfall</a></li>
+          </ul>
+        </li>
+        <li><a href="#about" onclick="closeMenu()">About</a></li>
+        <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="overlay" onclick="closeMenu()"></div>
+
+  <main>
+    <div class="gallery-grid">
+    <a href="../images/landscape1.jpg" data-lightbox="gallery">
+      <img class="fade" src="../images/landscape1-thumb.jpg" alt="山1">
+    </a>
+    <a href="../images/landscape2.jpg" data-lightbox="gallery">
+      <img class="fade" src="../images/landscape2-thumb.jpg" alt="山2">
+    </a>
+       <a href="../images/landscape3.jpg" data-lightbox="gallery">
+      <img class="fade" src="../images/landscape3-thumb.jpg" alt="山3">
+    </a>
+    <a href="../images/landscape4.jpg" data-lightbox="gallery">
+      <img class="fade" src="../images/landscape4-thumb.jpg" alt="山4">
+    </a>
+    <a href="../images/landscape5.jpg" data-lightbox="gallery">
+      <img class="fade" src="../images/landscape5-thumb.jpg" alt="山5">
+    </a>
+    <a href="../images/landscape6.jpg" data-lightbox="gallery">
+      <img class="fade" src="../images/landscape6-thumb.jpg" alt="山6">
+    </a>
+    <a href="../images/landscape7.jpg" data-lightbox="gallery">
+      <img class="fade" src="../images/landscape7-thumb.jpg" alt="山7">
+    </a>
+    <a href="../images/landscape8.jpg" data-lightbox="gallery">
+      <img class="fade" src="../images/landscape8-thumb.jpg" alt="山8">
+    </a>
+    <a href="../images/landscape9.jpg" data-lightbox="gallery">
+      <img class="fade" src="../images/landscape9-thumb.jpg" alt="山9">
+    </a>
+    <a href="../images/landscape10.jpg" data-lightbox="gallery">
+      <img class="fade" src="../images/landscape10-thumb.jpg" alt="山10">
+    </a>
+    <a href="../images/landscape11.jpg" data-lightbox="gallery">
+      <img class="fade" src="../images/landscape11-thumb.jpg" alt="山11">
+    </a>
+    <a href="../images/landscape12.jpg" data-lightbox="gallery">
+      <img class="fade" src="../images/landscape12-thumb.jpg" alt="山12">
+    </a>
+    <a href="../images/landscape13.jpg" data-lightbox="gallery">
+      <img class="fade" src="../images/landscape13-thumb.jpg" alt="山13">
+    </a>
+    <a href="../images/landscape14.jpg" data-lightbox="gallery">
+      <img class="fade" src="../images/landscape14-thumb.jpg" alt="山14">
+    </a>
+    <a href="../images/landscape15.jpg" data-lightbox="gallery">
+      <img class="fade" src="../images/landscape15-thumb.jpg" alt="山15">
+    </a>
+    <a href="../images/landscape16.jpg" data-lightbox="gallery">
+      <img class="fade" src="../images/landscape16-thumb.jpg" alt="山16">
+    </a>
+  </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Mikiya Yamada Photography</p>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+  <script src="../main.js"></script>
+</body>
+</html>
