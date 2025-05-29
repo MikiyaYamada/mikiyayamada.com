@@ -327,6 +327,10 @@ nav li a {
 
 .menu-toggle.active {
   z-index: 9999;
+
+  .dropdown-label {
+    color: #111
+  }
 }
 }
 
