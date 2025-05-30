@@ -23,6 +23,7 @@ body {
 .logo {
   height: 48px;
   width: auto;
+  background: white;
 }
 
 .menu-toggle {
