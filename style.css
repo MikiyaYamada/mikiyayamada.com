@@ -371,7 +371,6 @@ nav li a {
   gap: 0.3rem; /* Galleriesと▼の間隔 */
   width: 100%;
   padding: 1rem;
-  margin-bottom: 0.2rem;
   color: white;
 }
 
@@ -382,6 +381,7 @@ nav li a {
   width: 100%;
   text-align: center; /* 🔸中央揃え */
   position: static;
+  
 }
 
 .dropdown-content li a {
