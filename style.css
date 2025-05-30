@@ -301,7 +301,7 @@ nav li a {
 
   nav ul {
     flex-direction: column;
-    line-height: 1.2;
+    line-height: 0.5;
   }
 
   nav li a {
@@ -385,7 +385,7 @@ nav li a {
 .dropdown-content li a {
   font-size: 15px;
   padding: 1rem;
-  color: #a0a0a0;
+  color: #707070;
   display: block;
   text-align: center; /* 🔸テキスト中央揃え */
 }
