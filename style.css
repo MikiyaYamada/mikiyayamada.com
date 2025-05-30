@@ -338,6 +338,7 @@ nav li a {
     top: 100%;
     min-width: 160px;
     z-index: 1002;
+    
   }
 
     .dropdown-content li a {
@@ -377,7 +378,8 @@ nav li a {
 .dropdown-content.show {
   display: flex;
   background-color: white;
-  padding: 0;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
   width: 100%;
   text-align: center; /* 🔸中央揃え */
   position: static;
