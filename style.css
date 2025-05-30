@@ -312,6 +312,7 @@ nav li a {
     width: 100%;
     position: static;
     flex-direction: column;
+    line-height: 0.5;
   }
   
  .dropdown-header {
@@ -372,7 +373,6 @@ nav li a {
   width: 100%;
   padding: 1rem;
   color: white;
-  line-height: 0.5;
 }
 
 .dropdown-content.show {
