@@ -215,8 +215,8 @@ nav li a {
   .dropdown-header:hover .dropdown-content {
     display: flex;
     background-color: rgba(255, 255, 255, 0.5);
-    padding-top: 0.5rem;   /* ← Landscapeの上の余白 */
-    padding-bottom: 0.5rem; /* ← Waterfallの下の余白 */
+    padding-top: 1rem;   /* ← Landscapeの上の余白 */
+    padding-bottom: 1rem; /* ← Waterfallの下の余白 */
   }
   .dropdown-header:hover .dropdown-content li a {
     display: flex;
