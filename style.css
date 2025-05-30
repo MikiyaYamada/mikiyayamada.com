@@ -255,7 +255,7 @@ nav li a {
     text-align: left;
     padding: 0rem 0rem;
     line-height: 1.1;
-    color: #111;
+    color: #a0a0a0;
     font-size: clamp(14px, 1.5vw, 20px);
   }
 }
