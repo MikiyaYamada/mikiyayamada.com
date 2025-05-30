@@ -301,7 +301,7 @@ nav li a {
 
   nav ul {
     flex-direction: column;
-    text-align: feft;
+    line-height: 1.2;
   }
 
   nav li a {
