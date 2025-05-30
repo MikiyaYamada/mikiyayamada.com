@@ -256,8 +256,6 @@ nav li a {
     line-height: 0;
     color: #111;
     font-size: clamp(12px, 1vw, 16px);
-    margin-top: 20px;
-    margin-bottom: 20px;
   }
 }
 
