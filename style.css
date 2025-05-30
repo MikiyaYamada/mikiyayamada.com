@@ -254,8 +254,8 @@ nav li a {
     display: block;
     text-align: left;
     padding: 0rem 1rem;
-    padding-top: 0.3rem;   /* ← Landscapeの上の余白 */
-    padding-bottom: 0.3rem; /* ← Waterfallの下の余白 */
+    padding-top: 0.5rem;   /* ← Landscapeの上の余白 */
+    padding-bottom: 0.5rem; /* ← Waterfallの下の余白 */
     line-height: 1.1;
     color: #111;
     font-size: clamp(12px, 1vw, 16px);
