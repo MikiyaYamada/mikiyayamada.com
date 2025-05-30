@@ -256,7 +256,7 @@ nav li a {
     padding: 0rem 0rem;
     line-height: 1.1;
     color: #111;
-    font-size: clamp(15px, 1vw, 20px);
+    font-size: clamp(14px, 1vw, 20px);
   }
 }
 
