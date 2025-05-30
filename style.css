@@ -253,7 +253,7 @@ nav li a {
     display: block;
     text-align: left;
     padding: 0rem 1rem;
-    line-height: 1.1;
+    line-height: 0.5;
     color: #111;
     font-size: clamp(12px, 1vw, 16px);
     margin-top: 10px;
