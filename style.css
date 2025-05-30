@@ -377,7 +377,7 @@ nav li a {
 .dropdown-content.show {
   display: flex;
   background-color: white;
-  top: 80%;
+  padding-top: -1rem;
   padding-bottom: 0.3rem;
   width: 100%;
   text-align: center; /* 🔸中央揃え */
