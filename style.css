@@ -131,8 +131,7 @@ nav li a {
   display: none;
 }
 .gallery-preview{
-  margin-top: 25px;
-  margin-bottom:25px;
+  margin-bottom:20px;
 }
   
 .gallery-preview .grid img {
