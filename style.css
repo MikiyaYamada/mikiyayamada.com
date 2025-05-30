@@ -372,6 +372,7 @@ nav li a {
   width: 100%;
   padding: 1rem;
   color: white;
+  line-height: 0.5;
 }
 
 .dropdown-content.show {
