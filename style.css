@@ -137,6 +137,7 @@ nav li a {
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
   transition: transform 0.3s ease;
   margin-top: 25px;
+  margin-bottom:25px;
 }
 
 .gallery-preview .grid img:hover {
@@ -254,6 +255,8 @@ nav li a {
     padding: 1rem;
     color: #111;
     font-size: clamp(12px, 1vw, 16px);
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 }
 
