@@ -329,6 +329,7 @@ nav li a {
   .dropdown-label {
     font-size: 20px;
     user-select: none;
+    line-height: 0.5;
 }
   
   .dropdown-content.show {
@@ -353,6 +354,7 @@ nav li a {
     display: inline;
     font-size: 20px;
     user-select: none;
+    line-height: 0.5;
   }
   
   #overlay.show {
