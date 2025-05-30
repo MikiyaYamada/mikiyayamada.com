@@ -246,7 +246,6 @@ nav li a {
     left: 0;
     background-color: rgba(255, 255, 255, 0.8);
     z-index: 1002;
-    padding: 0rem 0rem:
     padding-top: 1.5rem;   /* ← Landscapeの上の余白 */
     padding-bottom: 1.5rem; /* ← Waterfallの下の余白 */
   }
@@ -256,7 +255,7 @@ nav li a {
     text-align: left;
     padding: 0rem 0rem;
     line-height: 1.1;
-    color: #a0a0a0;
+    color: #707070;
     font-size: clamp(14px, 1.5vw, 20px);
   }
 }
