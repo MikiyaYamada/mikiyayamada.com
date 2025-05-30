@@ -253,11 +253,11 @@ nav li a {
     display: block;
     text-align: left;
     padding: 0rem 1rem;
-    line-height: 0.2;
+    line-height: 0;
     color: #111;
     font-size: clamp(12px, 1vw, 16px);
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }
 
