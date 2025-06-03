@@ -323,7 +323,7 @@ footer {
     font-size: clamp(14px, 1.5vw, 20px);
   }
 
-  .profile-photo {
+  .img .profile-photo {
     max-width: 50%;
   }
 }
