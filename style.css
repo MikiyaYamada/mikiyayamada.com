@@ -176,6 +176,70 @@ nav li a {
   transform: scale(1.05);
 }
 
+.about-container {
+  text-align: center;
+  color: #eee;
+  padding: 3rem 1rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.profile-photo {
+  width: 120px;
+  border-radius: 4px;
+  margin: 2rem 0;
+}
+.bio {
+  line-height: 1.8;
+  font-size: 1rem;
+  color: #ccc;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  background: #111;
+  color: #888;
+}
+.social-icons {
+  margin-bottom: 1rem;
+}
+.social-icons a img {
+  width: 24px;
+  margin: 0 0.5rem;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+.social-icons a img:hover {
+  opacity: 1;
+}
+
+.awards {
+  margin-top: 2rem;
+  text-align: left;
+  padding: 0 1rem;
+  color: #ccc;
+}
+
+.awards h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: white;
+}
+
+.awards ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.awards li {
+  margin-bottom: 0.7rem;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
 @media (min-width: 769px) {
   .header-container {
     max-width: 1100px;
