@@ -20,13 +20,6 @@ body {
   z-index: 1001;
 }
 
-.about 
-.山田　美希也　
-.awards 
-.exhibitions {
-  color: #101010;
-}
-
 .logo {
   height: 48px;
   width: auto;
@@ -223,11 +216,17 @@ footer {
   opacity: 1;
 }
 
+.about,
+.山田　美希也,
+.awards,
+.exhibitions {
+  color: #101010;
+}
+
 .awards {
   margin-top: 2rem;
   text-align: center;
   padding: 0 1rem;
-  color: #ccc;
 }
 
 .awards h4 {
@@ -255,7 +254,6 @@ footer {
   margin-top: 2rem;
   text-align: center;
   padding: 0 1rem;
-  color: #ccc;
 }
 
 .exhibitions h4 {
