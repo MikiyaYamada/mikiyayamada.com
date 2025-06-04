@@ -178,7 +178,7 @@ nav li a {
 
 .about-container {
   text-align: center;
-  color: #707070;
+  color: #101010;
   padding: 1rem 1rem;
   max-width: 700px;
   margin: 0 auto;
@@ -216,14 +216,14 @@ footer {
   opacity: 1;
 }
 
-.about h2 {
-  color: #101010;
-}
-
 .awards {
   margin-top: 2rem;
   text-align: center;
   padding: 0 1rem;
+}
+
+.山田　美希也　h3 {
+  color: #101010;
 }
 
 .awards h4 {
