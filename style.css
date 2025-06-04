@@ -235,7 +235,6 @@ footer {
   padding: 0;
   margin: 0 auto;
   max-width: 600px;
-  text-aligh: center;
 }
 
 .awards li {
@@ -243,6 +242,7 @@ footer {
   line-height: 1.6;
   font-size: 0.95rem;
   color: #707070;
+  text-aligh: center;
 }
 
 .exhibitions h4 {
@@ -257,7 +257,6 @@ footer {
   padding: 0;
   margin: 0 auto;
   max-width: 600px;
-  text-aligh: center;
 }
 
 .exhibitions li {
@@ -265,6 +264,7 @@ footer {
     line-height: 1.6;
     font-size: 0.95rem;
     color: #707070;
+    text-aligh: center;
 }
 
 @media (min-width: 769px) {
