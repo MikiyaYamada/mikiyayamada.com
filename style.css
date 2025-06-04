@@ -184,8 +184,12 @@ nav li a {
   margin: 0 auto;
 }
 .profile-photo {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
   border-radius: 4px;
-  margin: 2rem 0;
+  margin: 1.5rem auto;
+  display: block;
 }
 .bio {
   line-height: 1.8;
@@ -323,7 +327,8 @@ footer {
   }
 
   .profile-photo {
-    max-width: 50%;
+    width: 160px;
+    height: 160px;
   }
 }
 
