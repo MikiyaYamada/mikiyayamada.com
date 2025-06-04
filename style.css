@@ -235,6 +235,7 @@ footer {
   padding: 0;
   margin: 0 auto;
   max-width: 600px;
+  text-aligh: center;
 }
 
 .awards li {
@@ -250,6 +251,13 @@ footer {
     text-align: center;
     color: #707070;
 }
+
+.exhibitions ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 600px;
+  text-aligh: center;
 
 .exhibitions li {
     margin-bottom: 0.7rem;
