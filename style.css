@@ -218,7 +218,7 @@ footer {
 
 .awards {
   margin-top: 2rem;
-  text-align: left;
+  text-align: center;
   padding: 0 1rem;
   color: #ccc;
 }
@@ -242,7 +242,13 @@ footer {
   line-height: 1.6;
   font-size: 0.95rem;
   color: #707070;
-  text-aligh: center;
+}
+
+.exhibitions {
+  margin-top: 2rem;
+  text-align: center;
+  padding: 0 1rem;
+  color: #ccc;
 }
 
 .exhibitions h4 {
@@ -264,7 +270,6 @@ footer {
     line-height: 1.6;
     font-size: 0.95rem;
     color: #707070;
-    text-aligh: center;
 }
 
 @media (min-width: 769px) {
