@@ -178,7 +178,7 @@ nav li a {
 
 .about-container {
   text-align: center;
-  color: #eee;
+  color: #707070;
   padding: 3rem 1rem;
   max-width: 700px;
   margin: 0 auto;
@@ -193,7 +193,7 @@ nav li a {
 .bio {
   line-height: 1.8;
   font-size: 1rem;
-  color: #ccc;
+  color: #707070;
 }
 
 footer {
@@ -226,7 +226,7 @@ footer {
   font-size: 1.2rem;
   margin-bottom: 1rem;
   text-align: center;
-  color: white;
+  color: #707070;
 }
 
 .awards ul {
@@ -240,6 +240,7 @@ footer {
   margin-bottom: 0.7rem;
   line-height: 1.6;
   font-size: 0.95rem;
+  color: #707070;
 }
 
 @media (min-width: 769px) {
