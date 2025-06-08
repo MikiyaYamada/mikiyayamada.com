@@ -98,5 +98,43 @@
 </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
   <script src="../main.js"></script>
+  <script>
+lightbox.option({
+  fadeDuration: 300,
+  imageFadeDuration: 0,
+  resizeDuration: 300,
+  wrapAround: true
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Lightbox 表示時にスピナー追加
+  document.body.addEventListener("lightbox:opened", () => {
+    const interval = setInterval(() => {
+      const img = document.querySelector(".lightbox .lb-image");
+      if (img && !img.classList.contains("lb-processed")) {
+        img.classList.add("lb-processed");
+
+        // スピナー追加
+        const spinner = document.createElement("div");
+        spinner.className = "lb-spinner";
+        img.parentNode.appendChild(spinner);
+
+        img.addEventListener("load", () => {
+          img.classList.add("loaded");
+          spinner.remove();
+        });
+
+        // キャッシュ対応
+        if (img.complete) {
+          img.classList.add("loaded");
+          spinner.remove();
+        }
+
+        clearInterval(interval);
+      }
+    }, 100);
+  });
+});
+</script>
 </body>
 </html>
