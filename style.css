@@ -338,26 +338,15 @@ footer {
   height: 100%;
 }
 
-.lightbox-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: rgba(255,255,255,0.8);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.5rem 1rem;
-  z-index: 9999; /* Lightboxより上 */
+/* Lightbox2 画像の縦方向中央寄せ修正 */
+.lightbox {
+  display: flex !important;
+  align-items: center !important;  /* 垂直方向の中央寄せ */
+  justify-content: center !important;  /* 水平方向中央（念のため） */
 }
 
-.back-button {
-  font-size: 1.2rem;
-  color: #111;
-  text-decoration: none;
-  background: white;
-  padding: 0.3rem 0.6rem;
-  border-radius: 4px;
+.lb-dataContainer {
+  margin-top: 1rem !important; /* キャプションや画像タイトルの余白を下に移す */
 }
 
 @media (min-width: 769px) {
@@ -588,9 +577,15 @@ footer {
 
 .menu-toggle.active {
   z-index: 9999;
+}
 
   .dropdown-label {
     color: #111
+  }
+
+  .lightbox {
+    padding: 1rem;
+    align-items: flex-start !important; /* モバイルでは上寄せにしてスクロール対応可 */
   }
 }
 
