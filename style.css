@@ -176,7 +176,6 @@ nav li a {
   width: 100%;      /* 親要素にフィットさせる */
   height: auto;     /* 縦横比維持 */
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  transition: transform 0.3s ease;
 }
 .gallery-grid a img {
   max-height: 100%;
