@@ -95,5 +95,13 @@
 </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
   <script src="../main.js"></script>
+  <script>
+  document.addEventListener("contextmenu", e => e.preventDefault()); // 右クリック無効
+  document.addEventListener("keydown", e => {
+    if (e.ctrlKey && ["u", "s", "c", "Shift", "i", "j"].includes(e.key.toLowerCase())) {
+      e.preventDefault();
+    }
+  });
+</script>
 </body>
 </html>
