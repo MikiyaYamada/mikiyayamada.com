@@ -583,9 +583,24 @@ footer {
     color: #111
   }
 
-  .lightbox {
-    padding: 1rem;
-    align-items: flex-start !important; /* モバイルでは上寄せにしてスクロール対応可 */
-  }
+/* Lightbox2 画像を画面中央に縦横ともに配置 */
+.lightbox {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 0 !important;
+}
+
+/* スマホ対応で高さに制限をつける */
+.lb-image {
+  max-height: 90vh !important;
+  max-width: 90vw !important;
+  object-fit: contain !important;
+}
+
+/* オーバーレイ背景を暗く */
+.lb-overlay {
+  background: rgba(0, 0, 0, 0.85) !important;
+}
 }
 
