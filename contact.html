@@ -7,9 +7,33 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="header-container">
-    <!-- 既存のヘッダーとメニューを流用 -->
-  </header>
+ <header class="header-container">
+    <div class="menu-toggle" onclick="toggleMenu(this)">
+      <span></span><span></span><span></span>
+    </div>
+    <img src="images/logo.jpg" alt="Logo" class="logo" />
+    <nav id="nav-menu">
+      <ul>
+        <li><a href="index.html" onclick="closeMenu()">Home</a></li>
+        <li class="dropdown">
+          <div class="dropdown-header">
+            <span class="dropdown-label">Galleries</span>
+            <span class="dropdown-toggle" onclick="toggleDropdown(event)">▼</span><!-- モバイル用 -->
+          </div>
+          <!-- ▼ この位置でドロップダウン展開させる -->
+            <ul class="dropdown-content" id="gallery-dropdown">
+              <li><a href="galleries/landscape.html" onclick="closeMenu()">Landscape</a></li>
+              <li><a href="galleries/woodland.html" onclick="closeMenu()">Woodland</a></li>
+              <li><a href="galleries/waterfall.html" onclick="closeMenu()">Waterfall</a></li>
+            </ul>
+        </li>
+      <li><a href="about.html" onclick="closeMenu()">About</a></li>
+      <li><a href="contact.html" onclick="closeMenu()">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <div id="overlay" onclick="closeMenu()"></div>
 
   <main class="contact-container">
     <h1>Contact</h1>
@@ -24,7 +48,13 @@
   </main>
 
   <footer>
-    <!-- 既存のフッター（SNSアイコン・著作表示など） -->
-  </footer>
+  <div class="social-icons">
+    <a href="https://instagram.com/mikiya_photography_" target="_blank"><img src="images/icon-instagram.svg" alt="Instagram"></a>
+    <a href="mailto:m.photo7217@gmail.com"><img src="images/icon-mail.svg" alt="Mail"></a>
+    <a href="https://x.com/ymd7217" target="_blank"><img src="images/icon-x.svg" alt="X"></a>
+  </div>
+  <p>&copy; 2025 Mikiya Yamada Photography</p>
+</footer>
+<script src="main.js"></script>
 </body>
 </html>
