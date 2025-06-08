@@ -58,9 +58,8 @@ body {
 }
 
 .main-title {
-  font-size: clamp(20px, 3vw, 36px); /* デバイスに応じて可変 */
+  font-size: clamp(20px, 3vw, 30px); /* デバイスに応じて可変 */
   font-weight: 600;
-  margin: 2rem 0;
   color: #111;
 }
 
@@ -147,7 +146,7 @@ nav li a {
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
   transition: transform 0.3s ease;
-  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .gallery-preview .grid img:hover {
