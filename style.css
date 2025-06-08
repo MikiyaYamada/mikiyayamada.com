@@ -177,6 +177,10 @@ nav li a {
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
   transition: transform 0.3s ease;
 }
+.gallery-grid a img {
+  max-height: 100%;
+  object-fit: cover;
+}
 
 .gallery-grid a img:hover {
   transform: scale(1.05);
@@ -326,6 +330,12 @@ footer {
 
 .contact-form button:hover {
   background-color: #333;
+}
+.gallery-grid a {
+  display: flex;
+  align-items: center;     /* ← 垂直中央揃え */
+  justify-content: center; /* ← 水平方向中央（必要なら） */
+  height: 100%;
 }
 
 @media (min-width: 769px) {
