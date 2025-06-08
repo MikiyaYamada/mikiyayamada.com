@@ -337,6 +337,11 @@ footer {
     height: 48px;
     width: auto;
   }
+
+  .h1 {
+  font-size: clamp(20px, 1.5vw, 30px);
+  }
+  
   .gallery-preview .grid img{
     max-width: 50%;
   }
@@ -432,6 +437,10 @@ footer {
 
   .logo {
     margin: 0 auto;
+  }
+  
+    .h1 {
+  font-size: 20px;
   }
 
   nav {
