@@ -57,6 +57,13 @@ body {
   transform: rotate(-45deg) translateY(-15px);
 }
 
+.main-title {
+  font-size: clamp(20px, 3vw, 36px); /* デバイスに応じて可変 */
+  font-weight: 600;
+  margin: 2rem 0;
+  color: #111;
+}
+
 nav {
   display: flex;
   gap: 2rem;
@@ -337,10 +344,6 @@ footer {
     height: 48px;
     width: auto;
   }
-
-  .h1 {
-  font-size: clamp(20px, 1.5vw, 30px);
-  }
   
   .gallery-preview .grid img{
     max-width: 50%;
@@ -437,10 +440,6 @@ footer {
 
   .logo {
     margin: 0 auto;
-  }
-  
-    .h1 {
-  font-size: 20px;
   }
 
   nav {
