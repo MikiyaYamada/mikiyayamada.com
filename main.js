@@ -22,30 +22,30 @@ function toggleDropdown(e) {
   const toggleIcon = document.querySelector(".dropdown .dropdown-toggle");
 
   const isNowShown = dropdown.classList.toggle("show");
-   toggleIcon.textContent = isNowShown ? "▲" : "▼";
+  toggleIcon.textContent = isNowShown ? "▲" : "▼";
 }
 
-
 document.addEventListener("DOMContentLoaded", () => {
-  // ギャラリードロップダウンを初期状態で閉じる
+  // ギャラリードロップダウン初期化
   const dropdown = document.getElementById("gallery-dropdown");
   const toggleIcon = document.querySelector(".dropdown-toggle");
-
   if (dropdown) dropdown.classList.remove("show");
   if (toggleIcon) toggleIcon.textContent = "▼";
 
   // フェードイン処理
- const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("visible");
-    } else {
-      entry.target.classList.remove("visible");
-    }
-  });
-}, { threshold: 0.1 });
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      } else {
+        entry.target.classList.remove("visible");
+      }
+    });
+  }, { threshold: 0.1 });
+
   document.querySelectorAll(".fade").forEach(el => observer.observe(el));
 });
+
 window.addEventListener("resize", () => {
   if (window.innerWidth >= 769) {
     document.getElementById("gallery-dropdown")?.classList.remove("show");
@@ -53,27 +53,31 @@ window.addEventListener("resize", () => {
     if (toggleIcon) toggleIcon.textContent = "▼";
   }
 });
+
+// Lightbox2 オプション設定
 lightbox.option({
   fadeDuration: 300,
   imageFadeDuration: 300,
   resizeDuration: 300,
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-  // Lightbox表示時に戻るボタンを追加
-  document.addEventListener("lightbox:opened", () => {
-    if (!document.querySelector(".lb-back-button")) {
-      const btn = document.createElement("a");
-      btn.href = "javascript:lightbox.end()"; // Lightboxを閉じる
-      btn.className = "lb-back-button";
-      btn.textContent = "← 戻る";
-      document.body.appendChild(btn);
-    }
-  });
+// Lightbox表示の監視 → 戻るボタンを追加
+const lbObserver = new MutationObserver(() => {
+  const lightbox = document.querySelector(".lightbox");
+  const overlay = document.querySelector(".lightboxOverlay");
 
-  // Lightboxを閉じたら戻るボタンを削除
-  document.addEventListener("lightbox:closed", () => {
+  if (lightbox && overlay && !document.querySelector(".lb-back-button")) {
+    const btn = document.createElement("a");
+    btn.href = "javascript:lightbox.end()";
+    btn.className = "lb-back-button";
+    btn.textContent = "← 戻る";
+    document.body.appendChild(btn);
+  }
+
+  if (!lightbox && !overlay) {
     const btn = document.querySelector(".lb-back-button");
     if (btn) btn.remove();
-  });
+  }
 });
+
+lbObserver.observe(document.body, { childList: true, subtree: true });
