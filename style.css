@@ -349,6 +349,25 @@ footer {
   margin-top: 1rem !important; /* キャプションや画像タイトルの余白を下に移す */
 }
 
+.lb-back-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 11000; /* Lightboxより上に表示 */
+  background: rgba(255, 255, 255, 0.9);
+  color: #111;
+  padding: 0.4rem 0.8rem;
+  font-size: 14px;
+  border: 1px solid #111;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+.lb-back-button:hover {
+  background: #111;
+  color: #fff;
+}
 @media (min-width: 769px) {
   .header-container {
     max-width: 1100px;
