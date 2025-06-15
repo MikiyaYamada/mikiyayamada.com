@@ -103,8 +103,49 @@
       e.preventDefault();
     }
   });
+<!-- Lightbox を先に読み込み -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
+<!-- Lightbox オプションを定義（lightbox が存在するか確認してから） -->
+<script>
+  if (typeof lightbox !== "undefined") {
+    lightbox.option({
+      fadeDuration: 300,
+      imageFadeDuration: 300,
+      resizeDuration: 300,
+    });
+
+    // Lightbox 表示中に戻るボタンを追加
+    const observer = new MutationObserver(() => {
+      const container = document.querySelector(".lightboxOverlay");
+      if (container && !document.querySelector(".lb-back-button")) {
+        const btn = document.createElement("a");
+        btn.href = "javascript:lightbox.end()";
+        btn.className = "lb-back-button";
+        btn.textContent = "← 戻る";
+        btn.style.position = "fixed";
+        btn.style.top = "20px";
+        btn.style.left = "20px";
+        btn.style.zIndex = "9999";
+        btn.style.color = "white";
+        btn.style.fontSize = "18px";
+        document.body.appendChild(btn);
+      }
+    });
+
+    observer.observe(document.body, { childList: true, subtree: true });
+
+    // Lightbox 終了時にボタンを消す
+    document.addEventListener("click", (e) => {
+      if (e.target.classList.contains("lb-close")) {
+        const btn = document.querySelector(".lb-back-button");
+        if (btn) btn.remove();
+      }
+    });
+  }
 </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
-  <script src="../main.js"></script>
+
+<!-- その他のJS（最後に） -->
+<script src="../main.js"></script>
 </body>
 </html>
