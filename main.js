@@ -53,3 +53,27 @@ window.addEventListener("resize", () => {
     if (toggleIcon) toggleIcon.textContent = "▼";
   }
 });
+lightbox.option({
+  fadeDuration: 300,
+  imageFadeDuration: 300,
+  resizeDuration: 300,
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Lightbox表示時に戻るボタンを追加
+  document.addEventListener("lightbox:opened", () => {
+    if (!document.querySelector(".lb-back-button")) {
+      const btn = document.createElement("a");
+      btn.href = "javascript:lightbox.end()"; // Lightboxを閉じる
+      btn.className = "lb-back-button";
+      btn.textContent = "← 戻る";
+      document.body.appendChild(btn);
+    }
+  });
+
+  // Lightboxを閉じたら戻るボタンを削除
+  document.addEventListener("lightbox:closed", () => {
+    const btn = document.querySelector(".lb-back-button");
+    if (btn) btn.remove();
+  });
+});
